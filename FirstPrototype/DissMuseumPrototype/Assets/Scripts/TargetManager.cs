@@ -10,6 +10,8 @@ public class TargetManager : MonoBehaviour {
     public GameObject[] objects;
     public TargetScript[] targets;
 
+    public GameObject contextualButton;
+
 	// Use this for initialization
 	void Start ()
     {

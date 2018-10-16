@@ -10,6 +10,8 @@ public class TargetScript : MonoBehaviour, ITrackableEventHandler
     public bool targetIntSet = false;
     public TargetManager TargetManager;
 
+    GameObject targetObject;
+
     private TrackableBehaviour mTrackableBehaviour;
 
     void Start()
@@ -35,16 +37,22 @@ public class TargetScript : MonoBehaviour, ITrackableEventHandler
             }
 
             Debug.Log("trying to use " + (targetInt - 1));
-            GameObject targetGO = TargetManager.objects[targetInt-1];
+            targetObject = TargetManager.objects[targetInt-1];
 
-            targetGO.SetActive(true);
-            targetGO.transform.parent = this.transform;
-            targetGO.transform.localPosition = Vector3.zero;
-            targetGO.transform.localEulerAngles = Vector3.zero;
+            targetObject.SetActive(true);
+            targetObject.transform.parent = this.transform;
+            targetObject.transform.localPosition = Vector3.zero;
+            targetObject.transform.localEulerAngles = Vector3.zero;
+
+            TargetManager.contextualButton.SetActive(true);
         }
         else
         {
-            //targetGO.SetActive(false);
+            if (targetObject != null)
+            {
+                TargetManager.contextualButton.SetActive(false);
+                TargetManager.contextualButton.GetComponent<ContextualARButton>().MenuToOpen = targetObject.GetComponent<ObjectScript>().MenuToOpen;
+            }
         }
     }
 }
