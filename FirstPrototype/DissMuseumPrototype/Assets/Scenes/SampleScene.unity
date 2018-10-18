@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -846,8 +846,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f4a0f70cecf11447a973115c6fec1db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panelPrefab: {fileID: 1274518369358960, guid: 36d90f185f2e4ad438d06a5482718f0e,
-    type: 2}
+  panelPrefab:
+  - {fileID: 1274518369358960, guid: 36d90f185f2e4ad438d06a5482718f0e, type: 2}
+  - {fileID: 1274518369358960, guid: eaac667efc6f164439733f1f17d75cf8, type: 2}
+  - {fileID: 1274518369358960, guid: fdbb8cba739120b4da72bccd2f105dd2, type: 2}
+  - {fileID: 1274518369358960, guid: 066ea0ad75ba35946840ed049f9f5570, type: 2}
+  - {fileID: 1274518369358960, guid: 2b80f7ae9d7ff4f43801935881fc44ac, type: 2}
+  - {fileID: 1274518369358960, guid: 2a65f5f9fc22b0e4b99d962233111ebd, type: 2}
+  - {fileID: 1274518369358960, guid: f55d51d0f956920419f1316e87b68ceb, type: 2}
+  - {fileID: 1274518369358960, guid: 29dd3c7a7aefdf54b830ee8ce0e8363d, type: 2}
+  - {fileID: 1274518369358960, guid: 1b7666937c428ae478e1fb2f09f570b8, type: 2}
   scrollRect: {fileID: 1603118846}
   panelCount: 9
   panelOffset: 33

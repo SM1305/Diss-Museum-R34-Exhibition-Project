@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class SnapScrolling : MonoBehaviour
 {
     [Header("Objects")]
-    public GameObject panelPrefab;
+    public GameObject[] panelPrefab;
     public ScrollRect scrollRect;
 
     private GameObject[] panelArray;
@@ -16,8 +16,7 @@ public class SnapScrolling : MonoBehaviour
     private Vector2 contentVector;
 
     [Header("Number Bits")]
-    [Range(1,9)]
-    public int panelCount;
+    public int panelCount = 9;
     public int panelOffset;
     public float snapSpeed;
     public float scaleOffset;
@@ -41,9 +40,9 @@ public class SnapScrolling : MonoBehaviour
 
         for (int i = 0; i < panelCount; i++)
         {
-            panelArray[i] = Instantiate(panelPrefab, transform, false);
+            panelArray[i] = Instantiate(panelPrefab[i], transform, false);
             if (i == 0) continue;
-            panelArray[i].transform.localPosition = new Vector2(panelArray[i-1].transform.localPosition.x + panelPrefab.GetComponent<RectTransform>().sizeDelta.x + panelOffset, panelArray[i].transform.localPosition.y);
+            panelArray[i].transform.localPosition = new Vector2(panelArray[i-1].transform.localPosition.x + panelPrefab[i].GetComponent<RectTransform>().sizeDelta.x + panelOffset, panelArray[i].transform.localPosition.y);
 
             panelPosition[i] = -panelArray[i].transform.localPosition;
         }	

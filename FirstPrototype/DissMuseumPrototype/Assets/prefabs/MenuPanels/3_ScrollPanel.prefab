@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 222236513367169044}
   - component: {fileID: 114263626722135528}
   m_Layer: 5
-  m_Name: ScrollPanel
+  m_Name: 3_ScrollPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
