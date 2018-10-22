@@ -38,18 +38,38 @@ public class SnapScrolling : MonoBehaviour
 
         panelScale = new Vector2[panelCount];
 
-        for (int i = 0; i < panelCount; i++)
+        /*for (int i = 0; i < panelCount; i++)
         {
             panelArray[i] = Instantiate(panelPrefab[i], transform, false);
             if (i == 0) continue;
             panelArray[i].transform.localPosition = new Vector2(panelArray[i-1].transform.localPosition.x + panelPrefab[i].GetComponent<RectTransform>().sizeDelta.x + panelOffset, panelArray[i].transform.localPosition.y);
 
             panelPosition[i] = -panelArray[i].transform.localPosition;
-        }	
-	}
-	
+        }*/
 
-	void FixedUpdate ()
+        int i = 0;
+        Transform lastChild = null;
+        foreach (Transform child in transform)
+        {
+            if (i == 0)
+            {
+                lastChild = child;
+                panelArray[i] = child.gameObject;
+                i++;
+                continue;
+            }
+            child.transform.localPosition = new Vector2(lastChild.transform.localPosition.x + child.GetComponent<RectTransform>().sizeDelta.x + panelOffset, child.transform.localPosition.y);
+
+            panelArray[i] = child.gameObject;
+            panelPosition[i] = -panelArray[i].transform.localPosition;
+            
+            i++;
+            lastChild = child;
+        }
+    }
+
+
+    void FixedUpdate ()
     {
         if (contentRect.anchoredPosition.x >= panelPosition[0].x && !isScrolling || contentRect.anchoredPosition.x <= panelPosition[panelPosition.Length - 1].x && !isScrolling)
         {
@@ -73,6 +93,7 @@ public class SnapScrolling : MonoBehaviour
             panelScale[i].y = Mathf.SmoothStep(panelArray[i].transform.localScale.x, scale + scaleSizeTweak, scaleSpeed * Time.fixedDeltaTime);
             panelArray[i].transform.localScale = panelScale[i];
         }
+
         float scrollVelocity = Mathf.Abs(scrollRect.velocity.x);
         //Debug.Log(scrollVelocity);
         if (scrollVelocity < swapSnapForce && !isScrolling)
