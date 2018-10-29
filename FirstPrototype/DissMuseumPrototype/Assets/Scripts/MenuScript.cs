@@ -34,4 +34,21 @@ public class MenuScript : MonoBehaviour {
     {
         cogMenu.SetBool("openCogMenu", false);
     }
+
+
+    // Close any active and open information screens
+    public void CloseInfomationScreens()
+    {
+        // Store any open info screens in an array.  Use an array to pick up any information screens that might accidently be active
+        GameObject[] infoScreens = GameObject.FindGameObjectsWithTag("InformationScreen");
+        //GameObject infoScreen = GameObject.FindGameObjectWithTag("InformationScreen");
+
+        //infoScreen.SetActive(false);
+
+        foreach (GameObject info in infoScreens)
+        {
+            // Disable them
+            info.SetActive(false);
+        }
+    }
 }

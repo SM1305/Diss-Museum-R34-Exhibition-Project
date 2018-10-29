@@ -45,12 +45,14 @@ public class TargetScript : MonoBehaviour, ITrackableEventHandler
             targetObject.transform.localEulerAngles = Vector3.zero;
 
             TargetManager.contextualButton.SetActive(true);
+            TargetManager.viewfinderSquare.SetActive(false);
         }
         else
         {
             if (targetObject != null)
             {
                 TargetManager.contextualButton.SetActive(false);
+                TargetManager.viewfinderSquare.SetActive(true);
                 TargetManager.contextualButton.GetComponent<ContextualARButton>().MenuToOpen = targetObject.GetComponent<ObjectScript>().MenuToOpen;
             }
         }

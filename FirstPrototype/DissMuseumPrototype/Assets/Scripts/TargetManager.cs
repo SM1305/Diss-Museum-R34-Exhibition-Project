@@ -11,9 +11,10 @@ public class TargetManager : MonoBehaviour {
     public TargetScript[] targets;
 
     public GameObject contextualButton;
+    public GameObject viewfinderSquare;
 
-	// Use this for initialization
-	void Start ()
+    // Use this for initialization
+    void Start ()
     {
         nextTarget = 1;
         foreach (var target in targets)
