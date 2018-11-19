@@ -5,31 +5,36 @@ using UnityEngine.UI;
 
 public class InfomationScreen3dModels : MonoBehaviour
 {
+    public GameObject activeObject;
     public SnapScrolling collectionMenu;
     public GameObject[] renderTextureObjects;
-    public GameObject activeObject;
 
     public Image[] backgrounds;
 
-	void Start ()
-    {
-		
-	}
+    public Image activePanel;
+    public Image[] panels;
 	
 	void Update ()
     {
-        
-        activeObject = renderTextureObjects[collectionMenu.selectedPanel-1];
-        activeObject.SetActive(true);
+        activePanel = panels[collectionMenu.selectedPanel-1];
 
-        for (int i = 0; i < renderTextureObjects.Length; i++)
+        for (int i = 0; i < panels.Length; i++)
         {
             backgrounds[i].enabled = false;
 
-            if (renderTextureObjects[i] != activeObject)
+            if (panels[i] == activePanel)
+            {
+                activeObject = renderTextureObjects[i];
+            }
+
+            if (activePanel.isActiveAndEnabled)
+            {
+                activeObject.SetActive(true);
+            }
+            else
             {
                 renderTextureObjects[i].SetActive(false);
             }
         }
-	}
+    }
 }

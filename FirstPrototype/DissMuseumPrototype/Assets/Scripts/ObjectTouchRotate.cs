@@ -27,7 +27,22 @@ public class ObjectTouchRotate : MonoBehaviour
         float Xrot = Input.GetAxis("Mouse X") * rotateSpeed * Mathf.Deg2Rad;
         float Yrot = Input.GetAxis("Mouse Y") * rotateSpeed * Mathf.Deg2Rad;
 
-        transform.Rotate(objectCamera.transform.up, -Xrot, Space.World);
-        transform.Rotate(objectCamera.transform.right, Yrot, Space.World);
+        if (Vector3.Dot(transform.up, Vector3.up) >= 0)
+        {
+            transform.Rotate(objectCamera.transform.up, -Xrot, Space.World);
+        }
+        else
+        {
+            transform.Rotate(objectCamera.transform.up, Xrot, Space.World);
+        }
+
+        if (Vector3.Dot(-transform.right, Vector3.left) >= 0)
+        {
+            transform.Rotate(objectCamera.transform.right, -Yrot, Space.World);
+        }
+        else
+        {
+            transform.Rotate(objectCamera.transform.right, Yrot, Space.World);
+        }
     }
 }
