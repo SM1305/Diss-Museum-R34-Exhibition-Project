@@ -6,6 +6,8 @@ TagManager:
   tags:
   - CollectionScreen
   - InformationScreen
+  - Fire
+  - R34
   layers:
   - Default
   - TransparentFX
