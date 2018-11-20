@@ -22,8 +22,13 @@ public class ScrollingButton : MonoBehaviour {
     {
         if(targetInt < TM.nextTarget && this.GetComponent<Button>().interactable == false)
         {
+            //show contextual cat
             this.GetComponent<Button>().interactable = true;
             LockedImage.enabled = false;
+        }
+        else
+        {
+            //show default bufflin
         }
     }
 
