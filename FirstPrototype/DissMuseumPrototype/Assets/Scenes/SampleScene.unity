@@ -791,6 +791,7 @@ GameObject:
   - component: {fileID: 79054208}
   - component: {fileID: 79054210}
   - component: {fileID: 79054209}
+  - component: {fileID: 79054211}
   m_Layer: 5
   m_Name: 3dModelRotate
   m_TagString: Untagged
@@ -849,6 +850,36 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 79054207}
   m_CullTransparentMesh: 0
+--- !u!114 &79054211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 79054207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 5
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 362111747}
+          m_MethodName: FingerRotate
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &83414739
 GameObject:
   m_ObjectHideFlags: 0
@@ -1133,7 +1164,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 265184738}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 270, y: 0, z: 0}
 --- !u!199 &118568444
 ParticleSystemRenderer:
@@ -7111,6 +7142,7 @@ GameObject:
   - component: {fileID: 242143993}
   - component: {fileID: 242143995}
   - component: {fileID: 242143994}
+  - component: {fileID: 242143996}
   m_Layer: 5
   m_Name: 3dModelRotate
   m_TagString: Untagged
@@ -7169,6 +7201,36 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 242143992}
   m_CullTransparentMesh: 0
+--- !u!114 &242143996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 242143992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 5
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1752942741}
+          m_MethodName: FingerRotate
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1001 &263969374
 Prefab:
   m_ObjectHideFlags: 0
@@ -7241,15 +7303,15 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 265184737}
-  m_LocalRotation: {x: -0, y: -1, z: 0, w: 0.00000028088027}
-  m_LocalPosition: {x: 558.649, y: 510.283, z: -12.406}
+  m_LocalRotation: {x: -0, y: -0.00000028088027, z: -0, w: -1}
+  m_LocalPosition: {x: -0.10784912, y: -0.035003662, z: 1.3607244}
   m_LocalScale: {x: 0.19999997, y: 0.2, z: 0.2}
   m_Children:
-  - {fileID: 2099795741}
   - {fileID: 945279065}
   - {fileID: 118568443}
-  m_Father: {fileID: 0}
-  m_RootOrder: 17
+  - {fileID: 2099795741}
+  m_Father: {fileID: 952216165}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &274056529
 GameObject:
@@ -8150,6 +8212,7 @@ GameObject:
   m_Component:
   - component: {fileID: 362111745}
   - component: {fileID: 362111746}
+  - component: {fileID: 362111747}
   m_Layer: 0
   m_Name: GondolaContainer
   m_TagString: Untagged
@@ -8192,6 +8255,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &362111747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 362111744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e0e8fc5c9ab37f43be08482bb733289, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 300
+  objectCamera: {fileID: 1046349266}
 --- !u!1 &365082567
 GameObject:
   m_ObjectHideFlags: 0
@@ -8434,7 +8510,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collectionMenu: {fileID: 174797176}
-  text: {fileID: 1902527344}
+  scrollingButton:
+  - {fileID: 1499894622}
+  - {fileID: 2065822485}
+  - {fileID: 631063813}
+  - {fileID: 459534623}
+  - {fileID: 1696029296}
+  - {fileID: 618137668}
+  - {fileID: 1331329059}
+  - {fileID: 970557337}
+  - {fileID: 1321987052}
+  snapScrolling: {fileID: 174797176}
+  mascotText: {fileID: 0}
   mascotSprites:
   - {fileID: 21300000, guid: c12b32b11a2b2a54aba03962ac0f59e3, type: 3}
   - {fileID: 21300000, guid: e58b6336948ea5c488271cf06ea38701, type: 3}
@@ -8445,6 +8532,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 967b75c7b93de1745b4e753ea230ae80, type: 3}
   - {fileID: 21300000, guid: 2e11d54b16ceaae4f8f40c67606add7b, type: 3}
   - {fileID: 21300000, guid: bde7fd9e7c0774c408cf3e480de9c2b9, type: 3}
+  thisPanel: {fileID: 476427105}
 --- !u!114 &369542378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9573,6 +9661,12 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 455828919}
   m_CullTransparentMesh: 0
+--- !u!114 &459534623 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114854361817577540, guid: 066ea0ad75ba35946840ed049f9f5570,
+    type: 2}
+  m_PrefabInternal: {fileID: 142359651}
+  m_Script: {fileID: 11500000, guid: a5212ae535406f14ba72c53a8596d41f, type: 3}
 --- !u!1 &465473795
 GameObject:
   m_ObjectHideFlags: 0
@@ -9773,10 +9867,10 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2091469745}
   - {fileID: 1715075767}
   - {fileID: 1452950939}
   - {fileID: 1359718734}
+  - {fileID: 2091469745}
   m_Father: {fileID: 773190233}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10431,8 +10525,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 497442918}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 559.06116, y: 510.89798, z: -16.015276}
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalPosition: {x: -0.52001953, y: 0.5799866, z: 4.9700003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 365082568}
@@ -10443,8 +10537,8 @@ Transform:
   - {fileID: 1525726678}
   - {fileID: 169320689}
   - {fileID: 1947886924}
-  m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_Father: {fileID: 952216165}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &497442920
 MonoBehaviour:
@@ -10459,7 +10553,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotateSpeed: 300
   objectCamera: {fileID: 497442918}
-  isTouching: 0
 --- !u!1 &517976291
 GameObject:
   m_ObjectHideFlags: 0
@@ -11309,7 +11402,7 @@ Transform:
   - {fileID: 1932630074}
   - {fileID: 465473796}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &614280029
 MonoBehaviour:
@@ -11324,7 +11417,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotateSpeed: 300
   objectCamera: {fileID: 614280027}
-  isTouching: 0
+--- !u!114 &618137668 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114443155620471098, guid: 2a65f5f9fc22b0e4b99d962233111ebd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1069952042}
+  m_Script: {fileID: 11500000, guid: a5212ae535406f14ba72c53a8596d41f, type: 3}
 --- !u!1 &620521074
 GameObject:
   m_ObjectHideFlags: 0
@@ -11335,6 +11433,7 @@ GameObject:
   - component: {fileID: 620521075}
   - component: {fileID: 620521077}
   - component: {fileID: 620521076}
+  - component: {fileID: 620521078}
   m_Layer: 5
   m_Name: 3dModelRotate
   m_TagString: Untagged
@@ -11393,6 +11492,36 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 620521074}
   m_CullTransparentMesh: 0
+--- !u!114 &620521078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 620521074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 5
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 497442920}
+          m_MethodName: FingerRotate
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &622553068
 GameObject:
   m_ObjectHideFlags: 0
@@ -11533,6 +11662,12 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 625679217}
   m_CullTransparentMesh: 0
+--- !u!114 &631063813 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114578715112608820, guid: fdbb8cba739120b4da72bccd2f105dd2,
+    type: 2}
+  m_PrefabInternal: {fileID: 988576831}
+  m_Script: {fileID: 11500000, guid: a5212ae535406f14ba72c53a8596d41f, type: 3}
 --- !u!1 &645282341
 GameObject:
   m_ObjectHideFlags: 0
@@ -13112,8 +13247,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 844181666}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 559.06116, y: 510.89798, z: -16.015276}
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalPosition: {x: -0.52001953, y: 0.5799866, z: 4.9700003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 544768079}
@@ -13122,8 +13257,8 @@ Transform:
   - {fileID: 1639268294}
   - {fileID: 806224707}
   - {fileID: 349557564}
-  m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_Father: {fileID: 952216165}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &844181668
 MonoBehaviour:
@@ -13138,7 +13273,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotateSpeed: 300
   objectCamera: {fileID: 844181666}
-  isTouching: 0
 --- !u!1 &854700431
 GameObject:
   m_ObjectHideFlags: 0
@@ -13264,16 +13398,16 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 857665156}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 559.06116, y: 510.89798, z: -16.015276}
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalPosition: {x: -0.52001953, y: 0.5799866, z: 4.9700003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 600223157}
   - {fileID: 1743262980}
   - {fileID: 1318095391}
   - {fileID: 1909596259}
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_Father: {fileID: 952216165}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &857665158
 MonoBehaviour:
@@ -13299,7 +13433,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotateSpeed: 300
   objectCamera: {fileID: 857665156}
-  isTouching: 0
 --- !u!1 &864714462
 GameObject:
   m_ObjectHideFlags: 0
@@ -14158,7 +14291,7 @@ Transform:
   m_LocalScale: {x: 0.50000083, y: 0.49999997, z: 0.5000008}
   m_Children: []
   m_Father: {fileID: 265184738}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
 --- !u!199 &945279066
 ParticleSystemRenderer:
@@ -18821,6 +18954,42 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 949907964}
   m_CullTransparentMesh: 0
+--- !u!1 &952216164
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 952216165}
+  m_Layer: 0
+  m_Name: InfoObjects
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &952216165
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 952216164}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 558.54114, y: 510.318, z: -11.045276}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1106053614}
+  - {fileID: 1046349267}
+  - {fileID: 857665157}
+  - {fileID: 1752942740}
+  - {fileID: 844181667}
+  - {fileID: 265184738}
+  - {fileID: 497442919}
+  - {fileID: 1378992248}
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &970400852
 GameObject:
   m_ObjectHideFlags: 0
@@ -18918,6 +19087,12 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 970400852}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &970557337 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114331216126606810, guid: 29dd3c7a7aefdf54b830ee8ce0e8363d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1389164691}
+  m_Script: {fileID: 11500000, guid: a5212ae535406f14ba72c53a8596d41f, type: 3}
 --- !u!1 &986163792
 GameObject:
   m_ObjectHideFlags: 0
@@ -19837,7 +20012,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1046349267}
-  - component: {fileID: 1046349268}
   - component: {fileID: 1046349269}
   m_Layer: 0
   m_Name: 3gondola
@@ -19845,7 +20019,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1046349267
 Transform:
   m_ObjectHideFlags: 0
@@ -19853,30 +20027,16 @@ Transform:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1046349266}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 558.46497, y: 510.308, z: -12.19}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.076171875, y: -0.009979248, z: 1.1447239}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 362111745}
   - {fileID: 2132109099}
   - {fileID: 1726178964}
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_Father: {fileID: 952216165}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1046349268
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1046349266}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e0e8fc5c9ab37f43be08482bb733289, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotateSpeed: 300
-  objectCamera: {fileID: 1046349266}
-  isTouching: 0
 --- !u!114 &1046349269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21003,14 +21163,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1106053613}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 558.54114, y: 510.318, z: -16.015276}
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 4.9700003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 51095624}
   - {fileID: 664953375}
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_Father: {fileID: 952216165}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1106053615
 MonoBehaviour:
@@ -21036,7 +21196,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotateSpeed: 300
   objectCamera: {fileID: 1106053613}
-  isTouching: 0
 --- !u!1 &1106228947
 GameObject:
   m_ObjectHideFlags: 0
@@ -21377,7 +21536,7 @@ Transform:
   - {fileID: 773498534}
   - {fileID: 167639701}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1131894944
 MonoBehaviour:
@@ -21403,7 +21562,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotateSpeed: 300
   objectCamera: {fileID: 1131894942}
-  isTouching: 0
 --- !u!1 &1140759804
 GameObject:
   m_ObjectHideFlags: 0
@@ -22047,6 +22205,7 @@ GameObject:
   - component: {fileID: 1231481522}
   - component: {fileID: 1231481524}
   - component: {fileID: 1231481523}
+  - component: {fileID: 1231481525}
   m_Layer: 5
   m_Name: 3dModelRotate
   m_TagString: Untagged
@@ -22105,6 +22264,36 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1231481521}
   m_CullTransparentMesh: 0
+--- !u!114 &1231481525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1231481521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 5
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 857665159}
+          m_MethodName: FingerRotate
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &1234999153
 GameObject:
   m_ObjectHideFlags: 0
@@ -22590,6 +22779,12 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1318095390}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1321987052 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114714894602865274, guid: 1b7666937c428ae478e1fb2f09f570b8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1756185879}
+  m_Script: {fileID: 11500000, guid: a5212ae535406f14ba72c53a8596d41f, type: 3}
 --- !u!1 &1324548107
 GameObject:
   m_ObjectHideFlags: 0
@@ -22659,6 +22854,12 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1324548107}
   m_CullTransparentMesh: 0
+--- !u!114 &1331329059 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114685608808916764, guid: f55d51d0f956920419f1316e87b68ceb,
+    type: 2}
+  m_PrefabInternal: {fileID: 1832641328}
+  m_Script: {fileID: 11500000, guid: a5212ae535406f14ba72c53a8596d41f, type: 3}
 --- !u!1 &1332885485
 GameObject:
   m_ObjectHideFlags: 0
@@ -23253,7 +23454,7 @@ RectTransform:
   - {fileID: 399298211}
   - {fileID: 2075725729}
   m_Father: {fileID: 468130163}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -23431,8 +23632,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1378992247}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 559.06116, y: 510.89798, z: -16.015276}
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalPosition: {x: -0.52001953, y: 0.5799866, z: 4.9700003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1055775581}
@@ -23444,8 +23645,8 @@ Transform:
   - {fileID: 786323473}
   - {fileID: 2109262177}
   - {fileID: 970400853}
-  m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_Father: {fileID: 952216165}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1378992249
 MonoBehaviour:
@@ -23460,7 +23661,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotateSpeed: 300
   objectCamera: {fileID: 1378992247}
-  isTouching: 0
 --- !u!1 &1383980353
 GameObject:
   m_ObjectHideFlags: 0
@@ -24222,7 +24422,7 @@ RectTransform:
   - {fileID: 1452385366}
   - {fileID: 645282342}
   m_Father: {fileID: 468130163}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -24568,6 +24768,12 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1470526935}
   m_Mesh: {fileID: 4300000, guid: 7f039556d009bc34f9c679b1b66e7f48, type: 3}
+--- !u!114 &1499894622 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114806151050481142, guid: 36d90f185f2e4ad438d06a5482718f0e,
+    type: 2}
+  m_PrefabInternal: {fileID: 61533463}
+  m_Script: {fileID: 11500000, guid: a5212ae535406f14ba72c53a8596d41f, type: 3}
 --- !u!1 &1524291441
 GameObject:
   m_ObjectHideFlags: 0
@@ -26011,6 +26217,7 @@ GameObject:
   - component: {fileID: 1659415824}
   - component: {fileID: 1659415826}
   - component: {fileID: 1659415825}
+  - component: {fileID: 1659415827}
   m_Layer: 5
   m_Name: 3dModelRotate
   m_TagString: Untagged
@@ -26069,6 +26276,36 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1659415823}
   m_CullTransparentMesh: 0
+--- !u!114 &1659415827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1659415823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 5
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 844181668}
+          m_MethodName: FingerRotate
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!224 &1663807585 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 224514394133583468, guid: 2a65f5f9fc22b0e4b99d962233111ebd,
@@ -26381,6 +26618,12 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1691052777}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1696029296 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114104615202446408, guid: 2b80f7ae9d7ff4f43801935881fc44ac,
+    type: 2}
+  m_PrefabInternal: {fileID: 1027691320}
+  m_Script: {fileID: 11500000, guid: a5212ae535406f14ba72c53a8596d41f, type: 3}
 --- !u!1 &1697872717
 GameObject:
   m_ObjectHideFlags: 0
@@ -26768,7 +27011,7 @@ RectTransform:
   m_Children:
   - {fileID: 90214948}
   m_Father: {fileID: 468130163}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -27443,6 +27686,7 @@ GameObject:
   - component: {fileID: 1749963124}
   - component: {fileID: 1749963126}
   - component: {fileID: 1749963125}
+  - component: {fileID: 1749963127}
   m_Layer: 5
   m_Name: 3dModelRotate
   m_TagString: Untagged
@@ -27501,6 +27745,36 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1749963123}
   m_CullTransparentMesh: 0
+--- !u!114 &1749963127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1749963123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 5
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1106053616}
+          m_MethodName: FingerRotate
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &1752942739
 GameObject:
   m_ObjectHideFlags: 0
@@ -27523,8 +27797,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1752942739}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 559.06116, y: 510.89798, z: -16.015276}
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalPosition: {x: -0.52001953, y: 0.5799866, z: 4.9700003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1642665753}
@@ -27532,8 +27806,8 @@ Transform:
   - {fileID: 83414740}
   - {fileID: 1625708658}
   - {fileID: 1687612339}
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_Father: {fileID: 952216165}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1752942741
 MonoBehaviour:
@@ -27548,7 +27822,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotateSpeed: 300
   objectCamera: {fileID: 1752942739}
-  isTouching: 0
 --- !u!1001 &1756185879
 Prefab:
   m_ObjectHideFlags: 0
@@ -28876,6 +29149,7 @@ GameObject:
   - component: {fileID: 1913119562}
   - component: {fileID: 1913119564}
   - component: {fileID: 1913119563}
+  - component: {fileID: 1913119565}
   m_Layer: 5
   m_Name: 3dModelRotate
   m_TagString: Untagged
@@ -28934,6 +29208,36 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1913119561}
   m_CullTransparentMesh: 0
+--- !u!114 &1913119565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1913119561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 5
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2099795742}
+          m_MethodName: FingerRotate
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &1913217106
 GameObject:
   m_ObjectHideFlags: 0
@@ -29834,6 +30138,7 @@ GameObject:
   - component: {fileID: 1961034036}
   - component: {fileID: 1961034038}
   - component: {fileID: 1961034037}
+  - component: {fileID: 1961034039}
   m_Layer: 5
   m_Name: 3dModelRotate
   m_TagString: Untagged
@@ -29892,6 +30197,36 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1961034035}
   m_CullTransparentMesh: 0
+--- !u!114 &1961034039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1961034035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 5
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1378992249}
+          m_MethodName: FingerRotate
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &1961546184
 GameObject:
   m_ObjectHideFlags: 0
@@ -30528,6 +30863,12 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2039004929}
   m_CullTransparentMesh: 0
+--- !u!114 &2065822485 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114989471567037476, guid: eaac667efc6f164439733f1f17d75cf8,
+    type: 2}
+  m_PrefabInternal: {fileID: 876982324}
+  m_Script: {fileID: 11500000, guid: a5212ae535406f14ba72c53a8596d41f, type: 3}
 --- !u!21 &2069020052
 Material:
   serializedVersion: 6
@@ -30758,7 +31099,6 @@ GameObject:
   - component: {fileID: 2091469745}
   - component: {fileID: 2091469747}
   - component: {fileID: 2091469746}
-  - component: {fileID: 2091469748}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -30777,7 +31117,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 468130163}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -30818,58 +31158,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2091469744}
   m_CullTransparentMesh: 0
---- !u!114 &2091469748
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2091469744}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 2091469746}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 773190234}
-        m_MethodName: CloseSideMenu
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 468130166}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Animator, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!1 &2093544094
 GameObject:
   m_ObjectHideFlags: 0
@@ -30937,6 +31225,7 @@ GameObject:
   - component: {fileID: 2099795738}
   - component: {fileID: 2099795737}
   - component: {fileID: 2099795736}
+  - component: {fileID: 2099795742}
   m_Layer: 0
   m_Name: MajorContainer
   m_TagString: Untagged
@@ -31042,8 +31331,21 @@ Transform:
   m_Children:
   - {fileID: 1886924835}
   m_Father: {fileID: 265184738}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -179.99998, z: 0}
+--- !u!114 &2099795742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2099795735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e0e8fc5c9ab37f43be08482bb733289, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 300
+  objectCamera: {fileID: 265184737}
 --- !u!1 &2108411342
 GameObject:
   m_ObjectHideFlags: 0

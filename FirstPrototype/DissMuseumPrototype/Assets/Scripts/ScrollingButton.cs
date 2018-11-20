@@ -13,6 +13,8 @@ public class ScrollingButton : MonoBehaviour {
 
     public Animator anim;
 
+    public bool isPanelUnlocked = false;
+
     private void Start()
     {
         anim = GetComponent<Animator>();
@@ -22,13 +24,11 @@ public class ScrollingButton : MonoBehaviour {
     {
         if(targetInt < TM.nextTarget && this.GetComponent<Button>().interactable == false)
         {
-            //show contextual cat
+            Debug.LogWarning("NOOOOO");
+            isPanelUnlocked = true;
+
             this.GetComponent<Button>().interactable = true;
             LockedImage.enabled = false;
-        }
-        else
-        {
-            //show default bufflin
         }
     }
 
