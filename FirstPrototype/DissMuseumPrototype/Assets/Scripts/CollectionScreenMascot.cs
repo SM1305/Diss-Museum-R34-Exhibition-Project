@@ -29,39 +29,39 @@ public class CollectionScreenMascot : MonoBehaviour
             // Play Elliot's mascot annimation once available
         }
 
-        switch (collectionMenu.selectedPanel)
-        {
-            case 0:
-                mascotText.text = "Whopsie!";
-                break;
-            case 1:
-                mascotText.text = "Take-off!";
-                break;
-            case 2:
-                mascotText.text = "Gondola!";
-                break;
-            case 3:
-                mascotText.text = "Crew";
-                break;
-            case 4:
-                mascotText.text = "Stowaway";
-                break;
-            case 5:
-                mascotText.text = "Weather";
-                break;
-            case 6:
-                mascotText.text = "Major";
-                break;
-            case 7:
-                mascotText.text = "NY Landing";
-                break;
-            case 8:
-                mascotText.text = "Homecoming";
-                break;
-            default:
-                mascotText.text = "Something went wrong!";
-                break;
-        }
+        //switch (collectionMenu.selectedPanel)
+        //{
+        //    case 0:
+        //        mascotText.text = "Whopsie!";
+        //        break;
+        //    case 1:
+        //        mascotText.text = "Take-off!";
+        //        break;
+        //    case 2:
+        //        mascotText.text = "Gondola!";
+        //        break;
+        //    case 3:
+        //        mascotText.text = "Crew";
+        //        break;
+        //    case 4:
+        //        mascotText.text = "Stowaway";
+        //        break;
+        //    case 5:
+        //        mascotText.text = "Weather";
+        //        break;
+        //    case 6:
+        //        mascotText.text = "Major";
+        //        break;
+        //    case 7:
+        //        mascotText.text = "NY Landing";
+        //        break;
+        //    case 8:
+        //        mascotText.text = "Homecoming";
+        //        break;
+        //    default:
+        //        mascotText.text = "Something went wrong!";
+        //        break;
+        //}
 
         // Checks which image should be shown at the top of the collection screen
         int i = snapScrolling.selectedPanel;
