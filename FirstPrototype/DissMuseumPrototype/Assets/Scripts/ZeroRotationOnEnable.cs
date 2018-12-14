@@ -8,7 +8,7 @@ public class ZeroRotationOnEnable : MonoBehaviour
 
     private void OnEnable()
     {
-        transform.rotation = Quaternion.identity;
+        transform.localRotation = Quaternion.identity;
 
         Debug.Log("I LIVE AGAIN!");
     }
