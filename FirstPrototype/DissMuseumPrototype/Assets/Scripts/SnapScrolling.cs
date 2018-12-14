@@ -26,7 +26,8 @@ public class SnapScrolling : MonoBehaviour
 
     [Header("Useful Bits")]
     public bool isScrolling;
-    public int selectedPanel;
+    public int selectedPanelInt;
+    public GameObject selectedPanel;
 
 
     void Start ()
@@ -85,7 +86,9 @@ public class SnapScrolling : MonoBehaviour
             {
                 nearestPos = distance;
 
-                selectedPanel = i;
+                selectedPanelInt = i;
+                selectedPanel = this.transform.GetChild(i).gameObject;
+                //Debug.Log(selectedPanel.name);
             }
 
             float scale = Mathf.Clamp(1 / (distance / panelOffset) * scaleOffset, 0.5f, 1f);
@@ -106,9 +109,28 @@ public class SnapScrolling : MonoBehaviour
             return;
         }
 
-        contentVector.x = Mathf.SmoothStep(contentRect.anchoredPosition.x, panelPosition[selectedPanel].x, snapSpeed * Time.deltaTime);
+        contentVector.x = Mathf.SmoothStep(contentRect.anchoredPosition.x, panelPosition[selectedPanelInt].x, snapSpeed * Time.deltaTime);
         contentRect.anchoredPosition = contentVector;
-	}
+
+        foreach (Transform item in this.transform)
+        {
+            //Debug.Log("WE HAVE FOUUUUNNNDDDD " + item.name);
+            if (item.gameObject != selectedPanel)
+            {
+                if (item.gameObject.GetComponent<Button>())
+                {
+                    item.gameObject.GetComponent<Button>().interactable = false;
+                }
+            }
+            else
+            {
+                if (item.gameObject.GetComponent<Button>())
+                {
+                    item.gameObject.GetComponent<Button>().interactable = true;
+                }
+            }
+        }
+    }
 
     public void Scrolling(bool scroll)
     {

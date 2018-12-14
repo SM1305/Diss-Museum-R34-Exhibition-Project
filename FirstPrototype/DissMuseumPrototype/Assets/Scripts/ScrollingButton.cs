@@ -22,7 +22,7 @@ public class ScrollingButton : MonoBehaviour {
 
     private void Update()
     {
-        if(targetInt < TM.nextTarget && this.GetComponent<Button>().interactable == false)
+        if(targetInt < TM.nextTarget)
         {
             Debug.LogWarning("NOOOOO");
             isPanelUnlocked = true;

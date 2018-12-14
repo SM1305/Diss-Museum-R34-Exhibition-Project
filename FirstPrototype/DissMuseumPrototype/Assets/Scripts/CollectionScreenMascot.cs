@@ -64,10 +64,10 @@ public class CollectionScreenMascot : MonoBehaviour
         //}
 
         // Checks which image should be shown at the top of the collection screen
-        int i = snapScrolling.selectedPanel;
-        if (scrollingButton[snapScrolling.selectedPanel].isPanelUnlocked)
+        int i = snapScrolling.selectedPanelInt;
+        if (scrollingButton[snapScrolling.selectedPanelInt].isPanelUnlocked)
         {
-            image.sprite = mascotSprites[collectionMenu.selectedPanel];
+            image.sprite = mascotSprites[collectionMenu.selectedPanelInt];
         }
         else // If panel is still locked, defaults back to first one
         {

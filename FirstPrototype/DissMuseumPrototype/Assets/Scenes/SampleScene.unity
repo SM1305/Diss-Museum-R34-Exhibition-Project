@@ -1131,7 +1131,7 @@ GameObject:
   - component: {fileID: 79054211}
   m_Layer: 5
   m_Name: 3dModelRotate
-  m_TagString: Untagged
+  m_TagString: Info3dModel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6810,7 +6810,8 @@ MonoBehaviour:
   scaleSizeTweak: 0.15
   swapSnapForce: 333
   isScrolling: 0
-  selectedPanel: 0
+  selectedPanelInt: 0
+  selectedPanel: {fileID: 0}
 --- !u!1 &175396064
 GameObject:
   m_ObjectHideFlags: 0
@@ -7117,7 +7118,7 @@ GameObject:
   - component: {fileID: 183995597}
   m_Layer: 5
   m_Name: 3dModelRotate
-  m_TagString: Untagged
+  m_TagString: Info3dModel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7749,7 +7750,7 @@ GameObject:
   - component: {fileID: 242143996}
   m_Layer: 5
   m_Name: 3dModelRotate
-  m_TagString: Untagged
+  m_TagString: Info3dModel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10139,7 +10140,6 @@ MonoBehaviour:
   saverOn: {fileID: 21300000, guid: 61fd95f6d1c82af46835d5f80d5c2401, type: 3}
   saverOff: {fileID: 21300000, guid: 7edc9af3b92e62645a2db3f68dcd359c, type: 3}
   currentSprite: {fileID: 0}
-  batterySaver: 0
 --- !u!114 &399298215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12433,7 +12433,7 @@ GameObject:
   - component: {fileID: 620521078}
   m_Layer: 5
   m_Name: 3dModelRotate
-  m_TagString: Untagged
+  m_TagString: Info3dModel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23632,7 +23632,7 @@ GameObject:
   - component: {fileID: 1231481525}
   m_Layer: 5
   m_Name: 3dModelRotate
-  m_TagString: Untagged
+  m_TagString: Info3dModel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28310,7 +28310,7 @@ GameObject:
   - component: {fileID: 1659415827}
   m_Layer: 5
   m_Name: 3dModelRotate
-  m_TagString: Untagged
+  m_TagString: Info3dModel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29934,7 +29934,7 @@ GameObject:
   - component: {fileID: 1749963127}
   m_Layer: 5
   m_Name: 3dModelRotate
-  m_TagString: Untagged
+  m_TagString: Info3dModel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29950,7 +29950,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2080540668}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -31938,7 +31938,7 @@ GameObject:
   - component: {fileID: 1913119565}
   m_Layer: 5
   m_Name: 3dModelRotate
-  m_TagString: Untagged
+  m_TagString: Info3dModel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32772,7 +32772,7 @@ GameObject:
   - component: {fileID: 1961034039}
   m_Layer: 5
   m_Name: 3dModelRotate
-  m_TagString: Untagged
+  m_TagString: Info3dModel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32886,7 +32886,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2080540668}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -33482,8 +33482,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1961546185}
   - {fileID: 1749963124}
+  - {fileID: 1961546185}
   m_Father: {fileID: 927393183}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

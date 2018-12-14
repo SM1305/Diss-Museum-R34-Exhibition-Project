@@ -11,7 +11,7 @@ public class BatterySaver : MonoBehaviour {
 
     InfomationScreen3dModels models;
 
-    public bool batterySaver = false;
+    public static bool batterySaver = false;
 
     // Use this for initialization
     void Start ()
@@ -24,14 +24,14 @@ public class BatterySaver : MonoBehaviour {
 
     public void Update()
     {
-        if (batterySaver)
+        /*if (batterySaver)
         {
             models.enabled = false;
         }
         else
         {
             models.enabled = true;
-        }
+        }*/
     }
 
     public void SetBatterySaver()
@@ -40,6 +40,7 @@ public class BatterySaver : MonoBehaviour {
         {
             batterySaver = true;
             currentSprite.sprite = saverOn;
+            //GameObject.FindGameObjectWithTag("Info3dModel").SetActive(false);
         }
         else if (batterySaver)
         {

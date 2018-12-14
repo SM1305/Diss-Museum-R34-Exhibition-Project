@@ -8,6 +8,7 @@ TagManager:
   - InformationScreen
   - Fire
   - R34
+  - Info3dModel
   layers:
   - Default
   - TransparentFX

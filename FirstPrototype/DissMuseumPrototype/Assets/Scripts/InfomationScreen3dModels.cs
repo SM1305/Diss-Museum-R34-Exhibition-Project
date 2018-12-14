@@ -18,26 +18,48 @@ public class InfomationScreen3dModels : MonoBehaviour
 	
 	void Update ()
     {
-        activePanel = panels[collectionMenu.selectedPanel - 1];
-
-        for (int i = 0; i < panels.Length; i++)
+        activePanel = panels[collectionMenu.selectedPanelInt - 1];
+        if (BatterySaver.batterySaver)
         {
-            backgrounds[i].enabled = false;
+            for (int i = 0; i < panels.Length; i++)
+            {
+                backgrounds[i].enabled = true;
 
-            if (panels[i] == activePanel)
-            {
-                activeObject = renderTextureObjects[i];
-            }
+                if (panels[i] == activePanel)
+                {
+                    activeObject = renderTextureObjects[i];
+                }
 
-            if (activePanel.isActiveAndEnabled)
-            {
-                activeObject.SetActive(true);
-            }
-            else
-            {
-                renderTextureObjects[i].SetActive(false);
+                if (activePanel.isActiveAndEnabled)
+                {
+                    activeObject.SetActive(false);
+                }
+                else
+                {
+                    renderTextureObjects[i].SetActive(false);
+                }
             }
         }
-        
+        else
+        {
+            for (int i = 0; i < panels.Length; i++)
+            {
+                backgrounds[i].enabled = false;
+
+                if (panels[i] == activePanel)
+                {
+                    activeObject = renderTextureObjects[i];
+                }
+
+                if (activePanel.isActiveAndEnabled)
+                {
+                    activeObject.SetActive(true);
+                }
+                else
+                {
+                    renderTextureObjects[i].SetActive(false);
+                }
+            }
+        }
     }
 }
