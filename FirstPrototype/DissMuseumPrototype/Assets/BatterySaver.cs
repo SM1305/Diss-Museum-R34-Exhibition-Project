@@ -9,6 +9,8 @@ public class BatterySaver : MonoBehaviour {
     public Sprite saverOff;
     public Image currentSprite;
 
+    InfomationScreen3dModels models
+
     public bool batterySaver = false;
 
     // Use this for initialization
@@ -16,6 +18,20 @@ public class BatterySaver : MonoBehaviour {
     {
         currentSprite = GetComponent<Image>();
         currentSprite.sprite = saverOff;
+
+        models = FindObjectOfType<InfomationScreen3dModels>();
+    }
+
+    public void Update()
+    {
+        if (batterySaver)
+        {
+            models.enabled = false;
+        }
+        else
+        {
+            models.enabled = true;
+        }
     }
 
     public void SetBatterySaver()

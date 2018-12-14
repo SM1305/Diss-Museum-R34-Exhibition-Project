@@ -13,10 +13,12 @@ public class InfomationScreen3dModels : MonoBehaviour
 
     public Image activePanel;
     public Image[] panels;
+
+    public bool batterySaver = false;
 	
 	void Update ()
     {
-        activePanel = panels[collectionMenu.selectedPanel-1];
+        activePanel = panels[collectionMenu.selectedPanel - 1];
 
         for (int i = 0; i < panels.Length; i++)
         {
@@ -36,5 +38,6 @@ public class InfomationScreen3dModels : MonoBehaviour
                 renderTextureObjects[i].SetActive(false);
             }
         }
+        
     }
 }
