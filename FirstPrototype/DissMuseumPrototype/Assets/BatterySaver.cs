@@ -9,7 +9,7 @@ public class BatterySaver : MonoBehaviour {
     public Sprite saverOff;
     public Image currentSprite;
 
-    InfomationScreen3dModels models
+    InfomationScreen3dModels models;
 
     public bool batterySaver = false;
 
