@@ -5,6 +5,29 @@ using UnityEngine.UI;
 
 public class MenuScript : MonoBehaviour {
 
+    public GameObject WelcomeScreen;
+    public GameObject CollectionScreen;
+    private void Start()
+    {
+        if (PlayerPrefs.GetInt("FirstOpen") == 0)
+        {
+            WelcomeScreen.SetActive(true);
+            PlayerPrefs.SetInt("FirstOpen", 1);
+        }
+        else
+        {
+            CollectionScreen.SetActive(true);
+        }
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            PlayerPrefs.SetInt("FirstOpen", 0);
+        }
+    }
+
     public void OpenMenu(GameObject MenuToOpen)
 	{
 		MenuToOpen.SetActive(true);
