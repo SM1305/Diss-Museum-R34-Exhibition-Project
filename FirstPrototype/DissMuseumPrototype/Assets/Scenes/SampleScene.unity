@@ -7233,7 +7233,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &214260403
 RectTransform:
   m_ObjectHideFlags: 0
@@ -27371,17 +27371,17 @@ Prefab:
     - target: {fileID: 224020621401269708, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 0.6062459
       objectReference: {fileID: 0}
     - target: {fileID: 224020621401269708, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224020621401269708, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224949045270762126, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
@@ -27396,24 +27396,29 @@ Prefab:
     - target: {fileID: 114447412720126682, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
       propertyPath: m_Text
-      value: "The airship had been in the air for 4 days encountering poor weather
-        and engine problems. The crew was beginning to tire. Emergency preparations
-        were tentatively being made in Boston for an emergency landing there but the
-        ship continued on her voyage. A good tail wind encouraged Scott to head for
-        New York. Each of the 80 fuel tanks were inspected and whatever fuel was left
-        was collected and poured in to the main tanks to keep the engines running.
-        On the 6 July 1919 at 9:45 a.m. the R34 landed at Mineola, Long Island, New
-        York. It had completed the first east-to-west aerial crossing of the Atlantic,
-        a journey that had taken four and a half days with approximately one hour's
-        fuel left on touchdown.\r\nTheir reception in New York was rapturous, a band
-        played \u2018God Save the King\u2019 as the crew emerged, but the music was
-        drowned by the cheering crowd. Thousands had arrived to see the airship touch
-        down.The people of New York lavished their generosity on the crew and they
-        were bombarded with offers of invitations to formal functions during their
-        stay. The crew met the American President Woodrow Wilson.\r\nThe engineering
-        crew stayed with the ship ready to give the engines a long-awaited overhaul
-        and a full check over in preparation for their return voyage home. It was
-        found that that no repairs were necessary and the engines had performed well.\r\n"
+      value: "The ship was only in America for 3 days. On 9 July 1919, while at dinner,
+        Scott received news of high winds approaching and he decided to leave at once.\n\nThe
+        crew were returned to the ship and provisions were loaded for her return voyage.
+        \nThe final preparation was to gas the ship, and this was carried out using
+        thousands of cylinders of hydrogen gas.\n\nAs with the flight to America,
+        the R34 would be gassed to capacity, and at 11:45 p.m. the airship lifted
+        cleanly into the night sky. The cheers of the crowd reinforced the crew\u2019s
+        confidence. They knew what to expect and believed that their discipline, skill
+        and attention to detail would take them safely home.\r\n\nVery good progress
+        was made during the night as the ship had the advantage of a strong tail wind,
+        and her speed increased to 90mph Early on 11 July, the starboard engine of
+        the two engines in the rear car failed.\n\nRepairs could not be made in flight
+        and so the engine was stopped. Due to this event and not having any spare
+        power in case of emergencies the Air Ministry diverted the ship from landing
+        at East Fortune. \nIt was to go directly to Pulham and on 13 July 1919 at
+        6:57 a.m. the journey finally came to an end. \n\nIt had lasted three days
+        and three hours. But, returning home on Sunday to an English airfield, rather
+        than the planned Scottish one, the reception at home was muted, and certainly
+        nothing like the lavish ceremonies that had been laid on in America.\n\nPulham,
+        with 400 men ready to bring her safely in, tried to make it a good homecoming.\n\nA
+        small RAF band had been hastily assembled, joined by a number of reporters
+        and spectators who had somehow managed to get to the remote spot in time for
+        the airship\u2019s landing.\r"
       objectReference: {fileID: 0}
     - target: {fileID: 114447412720126682, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
