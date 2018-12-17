@@ -1445,7 +1445,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &110186429
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10571,17 +10571,17 @@ Prefab:
     - target: {fileID: 224020621401269708, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0.62556463
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224020621401269708, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224020621401269708, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0.9999999
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1789996743983052, guid: 7f6d2d3103e45ef46bf292e222952107, type: 2}
       propertyPath: m_Name
@@ -10616,14 +10616,14 @@ Prefab:
         type: 2}
       propertyPath: m_Text
       value: "After the airship was airborne, the crews\u2019 mascot, a small tabby
-        cat called Whopsie, was found on board. The cat had been rescued from the
-        streets of Renfrew, brought to the airfield and had later been smuggled onboard
-        by stowaway William Ballantyne. When she was discovered it was decided that
-        the oldest airman, 42 year old George Graham, should have responsibility for
-        the cat and Whopsie worked her passage throughout the rest of the voyage providing
-        entertainment and comfort to the other crew members. On her arrival in the
-        United States, Whopsie became a celebrity in the American press and one Broadway
-        actress offered the crew US$1,000 for her but was turned down. \u2013 Whopsie
+        cat called Whopsie, was found on board. \n\nThe cat had been rescued from
+        the streets of Renfrew, brought to the airfield and had later been smuggled
+        onboard by stowaway William Ballantyne. \n\nWhen she was discovered it was
+        decided that the oldest airman, 42 year old George Graham, should have responsibility
+        for the cat and Whopsie worked her passage throughout the rest of the voyage
+        providing entertainment and comfort to the other crew members.\n\nOn her arrival
+        in the United States, Whopsie became a celebrity in the American press and
+        one Broadway actress offered the crew US$1,000 for her but was turned down.\n\nWhopsie
         was allowed to make the trip home on the R34."
       objectReference: {fileID: 0}
     - target: {fileID: 114447412720126682, guid: 7f6d2d3103e45ef46bf292e222952107,
@@ -10639,7 +10639,7 @@ Prefab:
     - target: {fileID: 224764247323635610, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 2189
+      value: 2568
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f6d2d3103e45ef46bf292e222952107, type: 2}
@@ -12092,7 +12092,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &550820063
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22846,17 +22846,17 @@ Prefab:
     - target: {fileID: 224020621401269708, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 0.7799036
       objectReference: {fileID: 0}
     - target: {fileID: 224020621401269708, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224020621401269708, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 0.99999994
       objectReference: {fileID: 0}
     - target: {fileID: 1789996743983052, guid: 7f6d2d3103e45ef46bf292e222952107, type: 2}
       propertyPath: m_Name
