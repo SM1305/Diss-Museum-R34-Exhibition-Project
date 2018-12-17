@@ -1409,7 +1409,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &110186429
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10535,7 +10535,7 @@ Prefab:
     - target: {fileID: 224020621401269708, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0.5476284
+      value: 0.60624576
       objectReference: {fileID: 0}
     - target: {fileID: 224020621401269708, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
@@ -22704,17 +22704,17 @@ Prefab:
     - target: {fileID: 224020621401269708, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0.6062457
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224020621401269708, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224020621401269708, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0.9999999
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1789996743983052, guid: 7f6d2d3103e45ef46bf292e222952107, type: 2}
       propertyPath: m_Name
@@ -22728,12 +22728,12 @@ Prefab:
     - target: {fileID: 114925541888112132, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
       propertyPath: m_Value
-      value: 0.99999976
+      value: 0.9999999
       objectReference: {fileID: 0}
     - target: {fileID: 114925541888112132, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
       propertyPath: m_Size
-      value: 0.44965404
+      value: 0.32460165
       objectReference: {fileID: 0}
     - target: {fileID: 224949045270762126, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
@@ -22744,6 +22744,41 @@ Prefab:
         type: 2}
       propertyPath: m_SizeDelta.y
       value: 941.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 114447412720126682, guid: 7f6d2d3103e45ef46bf292e222952107,
+        type: 2}
+      propertyPath: m_Text
+      value: "In 1919 the R34 was Britain\u2019s biggest airship. She was 643 feet
+        long and 92 feet high with a 79 foot diameter. Under the command of Major
+        George Herbert Scott, who was later killed in the crash of the R101 in October
+        1930, the R34 successfully completed the first transatlantic return crossing
+        by air. The purpose of the flight was to obtain information about flying conditions
+        over the Atlantic and demonstrate the airship\u2019s capabilities on a long
+        voyage.\r\nThe R34 departed from East Fortune in Scotland at 1:42 a.m. on
+        2 July 1919 and landed 4 days later at Mineola, Long Island New Yok, America
+        on 6 July 1919 at 9:45 a.m. It had taken 108 hours to complete the 3,130 nautical
+        mile journey.\r\nOn 9 July 1919 at 11.54 p.m. the airship began its return
+        journey and on 13 July 1919 at 6:57 a.m. arrived at Pulham Airfield after
+        a flight of 75 hours and 3 minutes.\r\n\r\nAfter the record making voyage
+        the R34 flew a total of 51 more flights but was written off and scrapped in
+        1931 following an accident.\r\n\r\nIn the Museum of Flight at the East Fortune
+        Airfield site the airship\u2019s nose cone, in the shape of a heraldic crest,
+        can be seen.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114447412720126682, guid: 7f6d2d3103e45ef46bf292e222952107,
+        type: 2}
+      propertyPath: m_FontData.m_Alignment
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 224764247323635610, guid: 7f6d2d3103e45ef46bf292e222952107,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 814
+      objectReference: {fileID: 0}
+    - target: {fileID: 224764247323635610, guid: 7f6d2d3103e45ef46bf292e222952107,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 3317
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f6d2d3103e45ef46bf292e222952107, type: 2}
