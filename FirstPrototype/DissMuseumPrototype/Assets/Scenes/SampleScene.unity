@@ -14495,7 +14495,7 @@ Prefab:
     - target: {fileID: 224020621401269708, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0.69372123
+      value: 0.90333307
       objectReference: {fileID: 0}
     - target: {fileID: 224020621401269708, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
@@ -14516,6 +14516,83 @@ Prefab:
         type: 2}
       propertyPath: m_SizeDelta.y
       value: 941.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 114447412720126682, guid: 7f6d2d3103e45ef46bf292e222952107,
+        type: 2}
+      propertyPath: m_Text
+      value: "Under the command of Major Scott the crew consisted of 30 airmen who
+        were experienced and dedicated servicemen, mainly riggers and engineers. \n\nThe
+        riggers\u2019 hazardous tasks included continuous maintenance of the airship\u2019s
+        gasbags with patches of rubber solution. Singing and whistling were encouraged,
+        because a change in tone indicated escaping gas. \nA dangerous aspect of their
+        work required a walk along the spine of the airship to inspect the skin and
+        gas valves. \nA rope was attached to them for safety, but most riggers were
+        skilled in walking without the rope, leaning into the wind. \n\nThe engineers
+        had a difficult, dirty and noisy time of it. The temperamental engines, constantly
+        troublesome, required \u2018mothering\u2019 to keep them operational-pumping
+        fuel, cleaning and repairing. \nAll wore heavy-duty flying suits which had
+        been redesigned to include parachute harnesses and integral lifesaving collars.
+        \r\n\nLife on board settled in to a routine of agreed scheduled watches, meals
+        and rest times The watch going on duty ate first, followed half an hour later
+        by the men coming off duty. \n\nThe schedule was breakfast at 7:30 a.m., lunch
+        at 11:30 a.m., tea at 3:30 p.m. and dinner at 7:30 p.m. \n\nThe food was basic
+        but filling. Beef, ham, eggs and potatoes were precooked. Plenty of bread,
+        cheese, jam, fruitcake, chocolate and tinned milk supplemented the diet, while
+        drinks consisted of Oxo, Bovril, tea and cocoa, along with plenty of drinking
+        water.\r\n\r\n\nThe heroic crew of the R34 were:\n\nMajor G H Scott A.F.C
+        - Captain \r\nCaptain G .S. Greenland - Second Officer\r\nSecond Lt H F Luck-
+        Third Officer \r\nSecond Lt J D Shotter - Engineering Officer\r\nMajor G G
+        H Cooke DSC \u2013 Navigator\r\nMajor J E M Pritchard O.B.E. - Special Duties
+        \r\nLt G Harris Meteorological Officer Second \r\nLt R F Durrant Wireless
+        Officer \r\nLt Commander Z Lansdowne Representative U S Navy \r\nBrigadier
+        General E M Maitland Special Duties\r\nWarrant Officer W R Mayes First Coxswain\r\nFlight
+        Sergeant W J Robinson Second Coxswain\r\nSergeant H M Watson Rigger \r\nCorporal
+        R J Burgess Rigger\nCorporal F Smith Rigger\r\nF P Browdie Rigger \r\nJ Forteath
+        Rigger Corporal\r\nH R Powell Wireless Telegraphy\r\nW J Edwards Wireless
+        Telegraphy\r\nW R Gent Engineer \r\nR W Ripley Engineer\r\nN A Scull Engineer\r\nG
+        Evenden Engineer \r\nJ Thirlwall Engineer \r\nE P Cross Engineer \r\nJ H Gray
+        Engineer\r\nG Graham Engineer\r\nJ S Mort Engineer\r\nJ Northeast Engineer\r\nR
+        Parker Engineer\r\nW Ballantyne - Stowaway\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114447412720126682, guid: 7f6d2d3103e45ef46bf292e222952107,
+        type: 2}
+      propertyPath: m_FontData.m_FontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114447412720126682, guid: 7f6d2d3103e45ef46bf292e222952107,
+        type: 2}
+      propertyPath: m_FontData.m_Alignment
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 224764247323635610, guid: 7f6d2d3103e45ef46bf292e222952107,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 814
+      objectReference: {fileID: 0}
+    - target: {fileID: 224764247323635610, guid: 7f6d2d3103e45ef46bf292e222952107,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 8479
+      objectReference: {fileID: 0}
+    - target: {fileID: 114447412720126682, guid: 7f6d2d3103e45ef46bf292e222952107,
+        type: 2}
+      propertyPath: m_FontData.m_VerticalOverflow
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114447412720126682, guid: 7f6d2d3103e45ef46bf292e222952107,
+        type: 2}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114447412720126682, guid: 7f6d2d3103e45ef46bf292e222952107,
+        type: 2}
+      propertyPath: m_FontData.m_BestFit
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114447412720126682, guid: 7f6d2d3103e45ef46bf292e222952107,
+        type: 2}
+      propertyPath: m_FontData.m_AlignByGeometry
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f6d2d3103e45ef46bf292e222952107, type: 2}
