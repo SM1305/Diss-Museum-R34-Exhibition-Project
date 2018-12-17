@@ -213,7 +213,7 @@ Prefab:
     - target: {fileID: 224020621401269708, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0.6937212
+      value: 0.776726
       objectReference: {fileID: 0}
     - target: {fileID: 224020621401269708, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
@@ -238,6 +238,42 @@ Prefab:
         type: 2}
       propertyPath: m_SizeDelta.y
       value: 941.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 114447412720126682, guid: 7f6d2d3103e45ef46bf292e222952107,
+        type: 2}
+      propertyPath: m_Text
+      value: "Beneath the main body of the airship, suspended by long, wooden struts
+        and braced rigging wires, the forward gondola appeared to be a single unit
+        some 50 feet long. However, it was actually made up of two parts separated
+        by a narrow gap, which was intended to prevent vibration from the engine affecting
+        the wireless telegraphy equipment. \r\nIncorporated in the forward section
+        were a control room and a small wireless cabin, below which, during flight,
+        trailed a long aerial. The control cabin was fronted with 'Triplex' safety
+        glass. Here were the steering and elevator wheels, the gas-valve controls,
+        the engine telegraph, the various navigational and wireless telegraphy instruments
+        and the toggles controlling the emergency forward water ballast. \r\nConnecting
+        the control-cabin with the keel was a ladder, protected from the elements
+        by a streamlined canvas cover. Another cover similarly enclosed the numerous
+        control-wire connections that led up into the hull. \r\nIn the rear section
+        of the forward gondola was the first of the engines, driving a single pusher
+        propeller 17 feet in diameter.\r\nHandling rails were mounted on each side
+        and underneath the Gondola were two 'bumping bags' of compressed air positioned
+        to help cushion landing shocks.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114447412720126682, guid: 7f6d2d3103e45ef46bf292e222952107,
+        type: 2}
+      propertyPath: m_FontData.m_Alignment
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 224764247323635610, guid: 7f6d2d3103e45ef46bf292e222952107,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 814
+      objectReference: {fileID: 0}
+    - target: {fileID: 224764247323635610, guid: 7f6d2d3103e45ef46bf292e222952107,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 3671
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f6d2d3103e45ef46bf292e222952107, type: 2}
@@ -15477,7 +15513,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &927393183
 RectTransform:
   m_ObjectHideFlags: 0
@@ -32140,17 +32176,17 @@ Prefab:
     - target: {fileID: 224020621401269708, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 0.6476188
       objectReference: {fileID: 0}
     - target: {fileID: 224020621401269708, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224020621401269708, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224949045270762126, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
