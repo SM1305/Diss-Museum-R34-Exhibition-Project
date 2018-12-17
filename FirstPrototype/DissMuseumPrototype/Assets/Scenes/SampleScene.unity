@@ -26288,28 +26288,28 @@ Prefab:
     - target: {fileID: 114447412720126682, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
       propertyPath: m_Text
-      value: "Once they were over the ocean, the clear skies changed to rolling mist.
-        Moisture permeated everything; the crew would endure cold and dampness throughout
-        much of the flight. The weather slowly worsened, and all the ships engines
+      value: "Once they were over the ocean, the clear skies changed to rolling mist.\nMoisture
+        permeated everything; the crew would endure cold and dampness throughout much
+        of the flight. \n\nThe weather slowly worsened, and all the ships engines
         were engaged to full power as the wind speed increased and a storm began to
-        approach. \nThe wireless operators were finding that these weather conditions
-        were causing electrostatic shocks from the equipment.\r Halfway across the
-        Atlantic the weather continued to deteriorate. It became increasingly stormy
-        and the wind turned head on to the airship. \nThe winds were blowing at about
-        50mph causing the ship to fight her way forwards and sideways.\nConcern was
-        beginning to show as there were no gauges on the petrol tanks and use of the
-        dipstick showed that there was only some 2,200 gallons of petrol left.\nWith
+        approach. \n\nThe wireless operators were finding that these weather conditions
+        were causing electrostatic shocks from the equipment.\r\n\nHalfway across
+        the Atlantic the weather continued to deteriorate. It became increasingly
+        stormy and the wind turned head on to the airship. \nThe winds were blowing
+        at about 50mph causing the ship to fight her way forwards and sideways.\n\nConcern
+        was beginning to show as there were no gauges on the petrol tanks and use
+        of the dipstick showed that there was only some 2,200 gallons of petrol left.\n\nWith
         further strong headwinds expected, the thought of getting to New York without
-        stopping was looking more unlikely every hour. \nThe crew was beginning to
-        tire. At one point they were caught by a thunderstorm that came up behind
+        stopping was looking more unlikely every hour. \n\nThe crew was beginning
+        to tire. At one point they were caught by a thunderstorm that came up behind
         them. Although the airship was badly shaken and fell several hundred feet,
         pitching violently, no one in the crew was hurt in the storm, although one
-        man came close to falling out of a hatch in the rough conditions.\nSecond
+        man came close to falling out of a hatch in the rough conditions.\n\nSecond
         Lieutenant Shotter, chief engineer, had been caught off guard, near the open
         drogue hatch in the bow. The airship\u2019s violent motion propelled him along
         the keel toward the hatch, and only by jamming one of his feet around a girder
-        did he manage to save his life.\nEmergency preparations were tentatively being
-        made for emergency landing, but the ship continued on her voyage.\r"
+        did he manage to save his life.\n\nEmergency preparations were tentatively
+        being made for emergency landing, but the ship continued on her voyage.\r"
       objectReference: {fileID: 0}
     - target: {fileID: 114447412720126682, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
