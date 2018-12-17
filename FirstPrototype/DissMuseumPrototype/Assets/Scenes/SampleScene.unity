@@ -21562,20 +21562,30 @@ Prefab:
       propertyPath: m_Text
       value: "From the airship the crew sighted the landing point but below, there
         was confusion as no one on the field in the landing party had any experience
-        of handling large rigid airships. An experienced officer was needed and Major
-        Pritchard volunteered. He washed and shaved in hot water from one of the airship\u2019s
-        engine radiators, then two fellow officers helped him through one of the windows
-        and he parachuted into the history books becoming first person to reach American
-        soil by air from Europe.\r\nMajor Pritchard\u2019s unique arrival had serious
-        purpose. He took command and efficiently organized the landing party while
-        the R34 made a circuit of the field. With engines stopped and propellers in
-        the horizontal position, the R34 was carefully eased into the hands of the
-        landing party.\r\n"
+        of handling large rigid airships. \n\nAn experienced officer was needed and
+        Major Pritchard volunteered. \n\nHe washed and shaved in hot water from one
+        of the airship\u2019s engine radiators, then two fellow officers helped him
+        through one of the windows and he parachuted into the history books becoming
+        first person to reach American soil by air from Europe.\r\n\nMajor Pritchard\u2019s
+        unique arrival had serious purpose. He took command and efficiently organized
+        the landing party while the R34 made a circuit of the field. \n\nWith engines
+        stopped and propellers in the horizontal position, the R34 was carefully eased
+        into the hands of the landing party.\r"
       objectReference: {fileID: 0}
     - target: {fileID: 114447412720126682, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
       propertyPath: m_FontData.m_Alignment
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 224764247323635610, guid: 7f6d2d3103e45ef46bf292e222952107,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 814
+      objectReference: {fileID: 0}
+    - target: {fileID: 224764247323635610, guid: 7f6d2d3103e45ef46bf292e222952107,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 2610
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f6d2d3103e45ef46bf292e222952107, type: 2}
