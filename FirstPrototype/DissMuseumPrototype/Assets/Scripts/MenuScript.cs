@@ -7,6 +7,8 @@ public class MenuScript : MonoBehaviour {
 
     public GameObject WelcomeScreen;
     public GameObject CollectionScreen;
+    public GameObject cameraScreen;
+
     private void Start()
     {
         if (PlayerPrefs.GetInt("FirstOpen") == 0)
@@ -16,7 +18,7 @@ public class MenuScript : MonoBehaviour {
         }
         else
         {
-            CollectionScreen.SetActive(true);
+            cameraScreen.SetActive(true);
         }
     }
 
