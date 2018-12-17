@@ -7248,7 +7248,7 @@ RectTransform:
   - {fileID: 1478889397}
   - {fileID: 949907965}
   m_Father: {fileID: 773190233}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -9677,7 +9677,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &375256160
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9691,13 +9691,13 @@ RectTransform:
   - {fileID: 1558821495}
   - {fileID: 1753905542}
   - {fileID: 1453327528}
-  m_Father: {fileID: 927393183}
-  m_RootOrder: 3
+  m_Father: {fileID: 773190233}
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 73.99997}
+  m_SizeDelta: {x: 0, y: -148}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &375256161
 MonoBehaviour:
@@ -10906,7 +10906,7 @@ RectTransform:
   - {fileID: 1359718734}
   - {fileID: 2091469745}
   m_Father: {fileID: 773190233}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
@@ -14031,6 +14031,7 @@ RectTransform:
   - {fileID: 683033737}
   - {fileID: 1697872718}
   - {fileID: 1633761453}
+  - {fileID: 375256160}
   - {fileID: 214260403}
   - {fileID: 1857589218}
   - {fileID: 1872960486}
@@ -15610,7 +15611,6 @@ RectTransform:
   - {fileID: 2080540668}
   - {fileID: 1884513096}
   - {fileID: 1747801301}
-  - {fileID: 375256160}
   m_Father: {fileID: 773190233}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -31128,17 +31128,17 @@ Prefab:
     - target: {fileID: 224020621401269708, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0.69372123
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224020621401269708, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224020621401269708, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224949045270762126, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
@@ -31149,6 +31149,44 @@ Prefab:
         type: 2}
       propertyPath: m_SizeDelta.y
       value: 941.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 114447412720126682, guid: 7f6d2d3103e45ef46bf292e222952107,
+        type: 2}
+      propertyPath: m_Text
+      value: "The airship had been in the air for 4 days encountering poor weather
+        and engine problems. \n\nThe crew was beginning to tire. Emergency preparations
+        were tentatively being made in Boston for an emergency landing there but the
+        ship continued on her voyage. \n\nA good tail wind encouraged Scott to head
+        for New York.\n\nEach of the 80 fuel tanks were inspected and whatever fuel
+        was left was collected and poured in to the main tanks to keep the engines
+        running.\n\nOn the 6 July 1919 at 9:45 a.m. the R34 landed at Mineola, Long
+        Island, New York. \nIt had completed the first east-to-west aerial crossing
+        of the Atlantic, a journey that had taken four and a half days with approximately
+        one hour's fuel left on touchdown.\r\n\nTheir reception in New York was rapturous,
+        a band played \u2018God Save the King\u2019 as the crew emerged, but the music
+        was drowned by the cheering crowd.\n\nThousands had arrived to see the airship
+        touch down.\nThe people of New York lavished their generosity on the crew
+        and they were bombarded with offers of invitations to formal functions during
+        their stay.\n\nThe crew met the American President Woodrow Wilson.\n\r\nThe
+        engineering crew stayed with the ship ready to give the engines a long-awaited
+        overhaul and a full check over in preparation for their return voyage home.
+        \nIt was found that that no repairs were necessary and the engines had performed
+        well.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114447412720126682, guid: 7f6d2d3103e45ef46bf292e222952107,
+        type: 2}
+      propertyPath: m_FontData.m_Alignment
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 224764247323635610, guid: 7f6d2d3103e45ef46bf292e222952107,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 814
+      objectReference: {fileID: 0}
+    - target: {fileID: 224764247323635610, guid: 7f6d2d3103e45ef46bf292e222952107,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 4763
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f6d2d3103e45ef46bf292e222952107, type: 2}
@@ -32187,7 +32225,7 @@ RectTransform:
   - {fileID: 1768810216}
   - {fileID: 309050993}
   m_Father: {fileID: 773190233}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -32259,7 +32297,7 @@ RectTransform:
   - {fileID: 529094368}
   - {fileID: 1350663112}
   m_Father: {fileID: 773190233}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
