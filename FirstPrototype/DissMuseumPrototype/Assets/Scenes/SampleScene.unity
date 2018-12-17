@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8289,7 +8289,6 @@ GameObject:
   m_Component:
   - component: {fileID: 282840814}
   - component: {fileID: 282840813}
-  - component: {fileID: 282840811}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -8297,13 +8296,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &282840811
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 282840810}
-  m_Enabled: 1
 --- !u!20 &282840813
 Camera:
   m_ObjectHideFlags: 0
@@ -13946,6 +13938,7 @@ GameObject:
   - component: {fileID: 773190231}
   - component: {fileID: 773190230}
   - component: {fileID: 773190234}
+  - component: {fileID: 773190235}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -14057,6 +14050,13 @@ MonoBehaviour:
   WelcomeScreen: {fileID: 1872960485}
   CollectionScreen: {fileID: 476427103}
   cameraScreen: {fileID: 1267394993}
+--- !u!81 &773190235
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 773190229}
+  m_Enabled: 1
 --- !u!1 &773498533
 GameObject:
   m_ObjectHideFlags: 0
@@ -28927,7 +28927,7 @@ MonoBehaviour:
   volumeOn: {fileID: 21300000, guid: a2ea48fb034781b4381c5996a4eeb5aa, type: 3}
   volumeOff: {fileID: 21300000, guid: 9f3573c7455380749be3841391787593, type: 3}
   currentSprite: {fileID: 0}
-  audioListener: {fileID: 282840811}
+  audioListener: {fileID: 0}
 --- !u!114 &1643969001
 MonoBehaviour:
   m_ObjectHideFlags: 0
