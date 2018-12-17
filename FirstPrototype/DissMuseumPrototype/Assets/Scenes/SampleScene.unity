@@ -15477,7 +15477,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &927393183
 RectTransform:
   m_ObjectHideFlags: 0
@@ -32140,17 +32140,17 @@ Prefab:
     - target: {fileID: 224020621401269708, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0.69372123
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224020621401269708, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224020621401269708, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224949045270762126, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
@@ -32161,6 +32161,36 @@ Prefab:
         type: 2}
       propertyPath: m_SizeDelta.y
       value: 941.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 114447412720126682, guid: 7f6d2d3103e45ef46bf292e222952107,
+        type: 2}
+      propertyPath: m_Text
+      value: "In the early hours of 2nd July 1919 the biggest airship in Britain gassed
+        to its limit, loaded to its full capacity and surrounded by handlers, was
+        in her floodlit hanger ready to leave East Fortune for the first east-to-west
+        aerial crossing of the Atlantic.\r\nA heavy tractor pulled the massive doors
+        apart and the R34 was slowly eased out by 700 members of the handling party.
+        The weather forecast was favourable and at 1.42 a.m. Major Scott ordered the
+        start. The engines were signalled to commence and the propellers roared into
+        life. The ropes were released and nose-up the R34 very slowly gained height.
+        The airship was heavily laden, even after a quarter of the main water-ballast
+        was dropped, but with all engines working hard Scott maintained height on
+        a course set to the west.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 224764247323635610, guid: 7f6d2d3103e45ef46bf292e222952107,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 814
+      objectReference: {fileID: 0}
+    - target: {fileID: 224764247323635610, guid: 7f6d2d3103e45ef46bf292e222952107,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 2326
+      objectReference: {fileID: 0}
+    - target: {fileID: 114447412720126682, guid: 7f6d2d3103e45ef46bf292e222952107,
+        type: 2}
+      propertyPath: m_FontData.m_Alignment
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f6d2d3103e45ef46bf292e222952107, type: 2}
