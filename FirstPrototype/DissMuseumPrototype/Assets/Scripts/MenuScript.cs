@@ -9,6 +9,8 @@ public class MenuScript : MonoBehaviour {
     public GameObject CollectionScreen;
     public GameObject cameraScreen;
 
+    public AudioSource clicks;
+
     private void Start()
     {
         if (PlayerPrefs.GetInt("FirstOpen") == 0)
@@ -58,6 +60,12 @@ public class MenuScript : MonoBehaviour {
     public void CloseCogMenu(Animator cogMenu)
     {
         cogMenu.SetBool("openCogMenu", false);
+    }
+
+    public void PlayClick()
+    {
+        Debug.Log("Play Click");
+        clicks.Play();
     }
 
 
