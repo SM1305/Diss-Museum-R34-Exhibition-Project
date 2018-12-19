@@ -16,8 +16,6 @@ public class TargetScript : MonoBehaviour, ITrackableEventHandler
 
     private TrackableBehaviour mTrackableBehaviour;
 
-    public Event_Audio audio;
-
     void Start()
     {
         mTrackableBehaviour = GetComponent<TrackableBehaviour>();
@@ -25,8 +23,6 @@ public class TargetScript : MonoBehaviour, ITrackableEventHandler
         {
             mTrackableBehaviour.RegisterTrackableEventHandler(this);
         }
-
-        audio = GetComponentInChildren<Event_Audio>();
     }
 
     public void Update()
@@ -34,6 +30,15 @@ public class TargetScript : MonoBehaviour, ITrackableEventHandler
         if (Input.GetKeyDown(KeyCode.R))
         {
             PlayerPrefs.SetInt(this.name, 0);
+        }
+
+        if (this.GetComponentInChildren<Event_Audio>() != null && mTrackableBehaviour.CurrentStatus == TrackableBehaviour.Status.TRACKED)
+        {
+            this.GetComponentInChildren<Event_Audio>().shouldPlay = true;
+        }
+        else
+        {
+            this.GetComponentInChildren<Event_Audio>().shouldPlay = false;
         }
     }
 
@@ -63,10 +68,7 @@ public class TargetScript : MonoBehaviour, ITrackableEventHandler
                 this.GetComponent<Animator>().SetTrigger("Play");
             }
 
-            if (audio != null)
-            {
-                audio.shouldPlay = true;
-            }
+            
 
 
             TargetManager.contextualButton.GetComponent<Animator>().SetTrigger("Open");
@@ -84,11 +86,6 @@ public class TargetScript : MonoBehaviour, ITrackableEventHandler
                 TargetManager.viewfinderSquare.SetActive(true);
                 TargetManager.contextualButton.GetComponent<ContextualARButton>().MenuToOpen = targetObject.GetComponent<ObjectScript>().MenuToOpen;
                 
-            }
-
-            if (audio != null)
-            {
-                audio.shouldPlay = true;
             }
         }
     }
