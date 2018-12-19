@@ -275,6 +275,11 @@ Prefab:
       propertyPath: m_SizeDelta.y
       value: 4269
       objectReference: {fileID: 0}
+    - target: {fileID: 224683549851911196, guid: 7f6d2d3103e45ef46bf292e222952107,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 4.9749756
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f6d2d3103e45ef46bf292e222952107, type: 2}
   m_IsPrefabAsset: 0
@@ -9666,6 +9671,11 @@ Prefab:
       propertyPath: m_SizeDelta.y
       value: 3384
       objectReference: {fileID: 0}
+    - target: {fileID: 224683549851911196, guid: 7f6d2d3103e45ef46bf292e222952107,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 4.9749756
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f6d2d3103e45ef46bf292e222952107, type: 2}
   m_IsPrefabAsset: 0
@@ -10955,6 +10965,11 @@ Prefab:
         type: 2}
       propertyPath: m_FontData.m_BestFit
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224683549851911196, guid: 7f6d2d3103e45ef46bf292e222952107,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 4.9749756
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f6d2d3103e45ef46bf292e222952107, type: 2}
@@ -14961,6 +14976,11 @@ Prefab:
         type: 2}
       propertyPath: m_AnchoredPosition.y
       value: 0.00036621094
+      objectReference: {fileID: 0}
+    - target: {fileID: 224683549851911196, guid: 7f6d2d3103e45ef46bf292e222952107,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 4.9749756
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f6d2d3103e45ef46bf292e222952107, type: 2}
@@ -21592,6 +21612,11 @@ Prefab:
       propertyPath: m_SizeDelta.y
       value: 2773
       objectReference: {fileID: 0}
+    - target: {fileID: 224683549851911196, guid: 7f6d2d3103e45ef46bf292e222952107,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 4.9749756
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f6d2d3103e45ef46bf292e222952107, type: 2}
   m_IsPrefabAsset: 0
@@ -22849,6 +22874,11 @@ Prefab:
         type: 2}
       propertyPath: m_SizeDelta.y
       value: 3910
+      objectReference: {fileID: 0}
+    - target: {fileID: 224683549851911196, guid: 7f6d2d3103e45ef46bf292e222952107,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 4.9749756
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f6d2d3103e45ef46bf292e222952107, type: 2}
@@ -26446,6 +26476,11 @@ Prefab:
       propertyPath: m_AnchoredPosition.y
       value: 0.00018310547
       objectReference: {fileID: 0}
+    - target: {fileID: 224683549851911196, guid: 7f6d2d3103e45ef46bf292e222952107,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 4.9749756
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f6d2d3103e45ef46bf292e222952107, type: 2}
   m_IsPrefabAsset: 0
@@ -27692,6 +27727,11 @@ Prefab:
       propertyPath: m_AnchoredPosition.y
       value: 0.00018310547
       objectReference: {fileID: 0}
+    - target: {fileID: 224683549851911196, guid: 7f6d2d3103e45ef46bf292e222952107,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 4.9749756
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f6d2d3103e45ef46bf292e222952107, type: 2}
   m_IsPrefabAsset: 0
@@ -28831,7 +28871,8 @@ MonoBehaviour:
   volumeOn: {fileID: 21300000, guid: a2ea48fb034781b4381c5996a4eeb5aa, type: 3}
   volumeOff: {fileID: 21300000, guid: 9f3573c7455380749be3841391787593, type: 3}
   currentSprite: {fileID: 0}
-  audioListener: {fileID: 0}
+  audioListener: {fileID: 773190235}
+  audioSources: []
 --- !u!114 &1643969001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29704,7 +29745,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1721161060}
   - component: {fileID: 1721161059}
-  - component: {fileID: 1721161058}
   - component: {fileID: 1721161061}
   m_Layer: 0
   m_Name: RotateCam
@@ -29713,13 +29753,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1721161058
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1721161057}
-  m_Enabled: 1
 --- !u!20 &1721161059
 Camera:
   m_ObjectHideFlags: 0
@@ -30523,6 +30556,11 @@ Prefab:
         type: 2}
       propertyPath: m_FontData.m_BestFit
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224683549851911196, guid: 7f6d2d3103e45ef46bf292e222952107,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 4.9749756
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f6d2d3103e45ef46bf292e222952107, type: 2}
@@ -32199,6 +32237,11 @@ Prefab:
         type: 2}
       propertyPath: m_FontData.m_Alignment
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 224683549851911196, guid: 7f6d2d3103e45ef46bf292e222952107,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 4.9749756
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f6d2d3103e45ef46bf292e222952107, type: 2}

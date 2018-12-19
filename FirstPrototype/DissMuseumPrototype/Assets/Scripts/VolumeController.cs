@@ -11,25 +11,48 @@ public class VolumeController : MonoBehaviour {
 
     public AudioListener audioListener;
 
+    public AudioSource[] audioSources;
+
+    private void Awake()
+    {
+        
+    }
+
     // Use this for initialization
     void Start()
     {
         currentSprite = GetComponent<Image>();
         audioListener.enabled = true;
 
+        
+
         currentSprite.sprite = volumeOn;
     }
 
     public void SetMute()
     {
+        audioSources = FindObjectsOfType<AudioSource>();
+
         if (!audioListener.isActiveAndEnabled)
         {
             audioListener.enabled = true;
+
+            for (int i = 0; i < audioSources.Length; i++)
+            {
+                audioSources[i].mute = false;
+            }
+
             currentSprite.sprite = volumeOn;
         }
         else if (audioListener.isActiveAndEnabled)
         {
             audioListener.enabled = false;
+
+            for (int i = 0; i < audioSources.Length; i++)
+            {
+                audioSources[i].mute = true;
+            }
+
             currentSprite.sprite = volumeOff;
         }
     }
