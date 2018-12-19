@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class SnapScrolling : MonoBehaviour
 {
+    public static SnapScrolling instance;
+
     [Header("Objects")]
     public GameObject[] panelPrefab;
     public ScrollRect scrollRect;
@@ -32,6 +34,8 @@ public class SnapScrolling : MonoBehaviour
 
     void Start ()
     {
+        instance = this;
+
         contentRect = GetComponent<RectTransform>();
 
         panelArray = new GameObject[panelCount];
@@ -124,7 +128,7 @@ public class SnapScrolling : MonoBehaviour
             }
             else
             {
-                if (item.gameObject.GetComponent<Button>())
+                if (item.gameObject.GetComponent<Button>() && item.GetComponent<ScrollingButton>().targetInt < TargetManager.instance.nextTarget)
                 {
                     item.gameObject.GetComponent<Button>().interactable = true;
                 }

@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class InfomationScreen3dModels : MonoBehaviour
 {
+
     public GameObject activeObject;
     public SnapScrolling collectionMenu;
     public GameObject[] renderTextureObjects;
@@ -15,8 +16,8 @@ public class InfomationScreen3dModels : MonoBehaviour
     public Image[] panels;
 
     public bool batterySaver = false;
-	
-	void Update ()
+
+    void Update ()
     {
         activePanel = panels[collectionMenu.selectedPanelInt - 1];
         if (BatterySaver.batterySaver)

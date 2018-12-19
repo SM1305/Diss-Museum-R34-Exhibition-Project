@@ -35,13 +35,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4377895967464250}
+  - component: {fileID: 114580618040527934}
   m_Layer: 0
   m_Name: WeatherEvent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1434835829782306
 GameObject:
   m_ObjectHideFlags: 0
@@ -320,6 +321,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114580618040527934
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1274169596528216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ef7d61e222a1af46abb5a72c4e210c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MenuToOpen: {fileID: 0}
+  ContextualText: You discovered the weather dangers the crew faced! Learn how the
+    crew coped!
 --- !u!114 &114850860181276916
 MonoBehaviour:
   m_ObjectHideFlags: 1

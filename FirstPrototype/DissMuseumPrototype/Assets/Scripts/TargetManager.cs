@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class TargetManager : MonoBehaviour {
 
+    public static TargetManager instance;
+
     [HideInInspector]
     public int nextTarget = 1;
 
