@@ -920,7 +920,6 @@ MonoBehaviour:
   targetIntSet: 0
   TargetManager: {fileID: 2093544095}
   snapScrolling: {fileID: 0}
-  audio: {fileID: 0}
 --- !u!33 &71464549
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -945,7 +944,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 629598244}
+  - {fileID: 977878126}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7800,7 +7799,6 @@ MonoBehaviour:
   targetIntSet: 0
   TargetManager: {fileID: 2093544095}
   snapScrolling: {fileID: 0}
-  audio: {fileID: 0}
 --- !u!33 &267995863
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -8164,7 +8162,6 @@ MonoBehaviour:
   targetIntSet: 0
   TargetManager: {fileID: 2093544095}
   snapScrolling: {fileID: 0}
-  audio: {fileID: 0}
 --- !u!33 &277286663
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -8305,7 +8302,6 @@ MonoBehaviour:
   targetIntSet: 0
   TargetManager: {fileID: 2093544095}
   snapScrolling: {fileID: 0}
-  audio: {fileID: 0}
 --- !u!33 &281060511
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -12252,6 +12248,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MenuToOpen: {fileID: 1630038407}
   ContextualText: "You discovered the R34\u2019s crew! Learn more about them!"
+--- !u!114 &557443666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 557443664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc3f282e2acd57d4394ac90da4e35f93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSources: []
+  shouldPlay: 0
 --- !u!224 &579034863 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 224514394133583468, guid: 36d90f185f2e4ad438d06a5482718f0e,
@@ -12557,6 +12566,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MenuToOpen: {fileID: 683033736}
   ContextualText: You discovered William Ballantyne! Learn more his story!
+--- !u!114 &612712910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 612712908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc3f282e2acd57d4394ac90da4e35f93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSources: []
+  shouldPlay: 0
 --- !u!114 &618137668 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114443155620471098, guid: 2a65f5f9fc22b0e4b99d962233111ebd,
@@ -12817,33 +12839,6 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5882353}
   m_EffectDistance: {x: 0, y: -7}
   m_UseGraphicAlpha: 1
---- !u!21 &629598244
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 'OrangeMaterial
-
-    20758'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 863bfb7457d94358a8d97b033301a816, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!114 &631063813 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114578715112608820, guid: fdbb8cba739120b4da72bccd2f105dd2,
@@ -13181,7 +13176,6 @@ MonoBehaviour:
   targetIntSet: 0
   TargetManager: {fileID: 2093544095}
   snapScrolling: {fileID: 0}
-  audio: {fileID: 0}
 --- !u!33 &670765444
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -13512,6 +13506,19 @@ MonoBehaviour:
   MenuToOpen: {fileID: 214260402}
   ContextualText: "You discovered the R34\u2019s successful return! Learn about how
     they succeeded!"
+--- !u!114 &697043762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 697043760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc3f282e2acd57d4394ac90da4e35f93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSources: []
+  shouldPlay: 0
 --- !u!1 &706360374
 GameObject:
   m_ObjectHideFlags: 0
@@ -19996,6 +20003,33 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1389164691}
   m_Script: {fileID: 11500000, guid: a5212ae535406f14ba72c53a8596d41f, type: 3}
+--- !u!21 &977878126
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 'OrangeMaterial
+
+    20092'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 863bfb7457d94358a8d97b033301a816, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &986163792
 GameObject:
   m_ObjectHideFlags: 0
@@ -20034,7 +20068,6 @@ MonoBehaviour:
   targetIntSet: 0
   TargetManager: {fileID: 2093544095}
   snapScrolling: {fileID: 0}
-  audio: {fileID: 0}
 --- !u!33 &986163794
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -21102,6 +21135,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MenuToOpen: {fileID: 1633761452}
   ContextualText: You discovered Major Pritchard! Learn more about his actions!
+--- !u!114 &1050011806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1050011804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc3f282e2acd57d4394ac90da4e35f93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSources: []
+  shouldPlay: 0
 --- !u!1 &1055775580
 GameObject:
   m_ObjectHideFlags: 0
@@ -21704,7 +21750,6 @@ MonoBehaviour:
   targetIntSet: 0
   TargetManager: {fileID: 2093544095}
   snapScrolling: {fileID: 0}
-  audio: {fileID: 0}
 --- !u!33 &1080277000
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -23471,6 +23516,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MenuToOpen: {fileID: 550820062}
   ContextualText: I AM AN INSET REEEEE
+--- !u!114 &1201876523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1201876520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc3f282e2acd57d4394ac90da4e35f93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSources: []
+  shouldPlay: 0
 --- !u!1 &1203798842
 GameObject:
   m_ObjectHideFlags: 0
@@ -29014,7 +29072,6 @@ MonoBehaviour:
   targetIntSet: 0
   TargetManager: {fileID: 2093544095}
   snapScrolling: {fileID: 0}
-  audio: {fileID: 0}
 --- !u!33 &1700864226
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -31608,6 +31665,24 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78b5d67a09844004e8dc411fa65918fa, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1834386894 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1398765958550468, guid: 78b5d67a09844004e8dc411fa65918fa,
+    type: 2}
+  m_PrefabInternal: {fileID: 1834386893}
+--- !u!114 &1834386895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1834386894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc3f282e2acd57d4394ac90da4e35f93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSources: []
+  shouldPlay: 0
 --- !u!4 &1837962899 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4499517832482638, guid: 78b5d67a09844004e8dc411fa65918fa,
