@@ -7,7 +7,7 @@ public class FadeMaterial : MonoBehaviour
     public Color colour;
     public float fadeSpeed;
 
-    public AudioSource wind, engine;
+    
 
 	void Start ()
     {
@@ -15,8 +15,6 @@ public class FadeMaterial : MonoBehaviour
 
         StartCoroutine("FadeTo (1.0f, 0.5f)");
 
-        wind.Play();
-        engine.Play();
     }
 	
 	void Update ()
