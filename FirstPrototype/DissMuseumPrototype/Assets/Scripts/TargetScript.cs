@@ -52,6 +52,11 @@ public class TargetScript : MonoBehaviour, ITrackableEventHandler
             targetObject.transform.localPosition = Vector3.zero;
             targetObject.transform.localEulerAngles = Vector3.zero;
 
+            if (this.GetComponentInChildren<Animator>() != null)
+            {
+                this.GetComponent<Animator>().SetTrigger("Play");
+            }
+
             TargetManager.contextualButton.GetComponent<Animator>().SetTrigger("Open");
             TargetManager.contextualButton.GetComponentInChildren<Text>().text = targetObject.GetComponent<ObjectScript>().ContextualText;
             TargetManager.viewfinderSquare.SetActive(false);
