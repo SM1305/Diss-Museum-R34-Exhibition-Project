@@ -16,6 +16,8 @@ public class TargetScript : MonoBehaviour, ITrackableEventHandler
 
     private TrackableBehaviour mTrackableBehaviour;
 
+    public Event_Audio audio;
+
     void Start()
     {
         mTrackableBehaviour = GetComponent<TrackableBehaviour>();
@@ -23,6 +25,8 @@ public class TargetScript : MonoBehaviour, ITrackableEventHandler
         {
             mTrackableBehaviour.RegisterTrackableEventHandler(this);
         }
+
+        audio = GetComponentInChildren<Event_Audio>();
     }
 
     public void Update()
@@ -59,6 +63,11 @@ public class TargetScript : MonoBehaviour, ITrackableEventHandler
                 this.GetComponent<Animator>().SetTrigger("Play");
             }
 
+            if (audio != null)
+            {
+                audio.shouldPlay = true;
+            }
+
 
             TargetManager.contextualButton.GetComponent<Animator>().SetTrigger("Open");
             TargetManager.contextualButton.GetComponentInChildren<Text>().text = targetObject.GetComponent<ObjectScript>().ContextualText;
@@ -75,6 +84,11 @@ public class TargetScript : MonoBehaviour, ITrackableEventHandler
                 TargetManager.viewfinderSquare.SetActive(true);
                 TargetManager.contextualButton.GetComponent<ContextualARButton>().MenuToOpen = targetObject.GetComponent<ObjectScript>().MenuToOpen;
                 
+            }
+
+            if (audio != null)
+            {
+                audio.shouldPlay = true;
             }
         }
     }

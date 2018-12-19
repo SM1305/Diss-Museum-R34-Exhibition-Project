@@ -159,13 +159,15 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4582496395360868}
+  - component: {fileID: 114333727122912042}
+  - component: {fileID: 114770295953615094}
   m_Layer: 0
   m_Name: GondolaEvent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4026288791624138
 Transform:
   m_ObjectHideFlags: 1
@@ -514,7 +516,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f6d0b0a7269ace045885fa86ca736936, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.18
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -609,7 +611,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: bdd17ccb2f6d7454dab3f92c30f28b51, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.586
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -742,6 +744,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   colour: {r: 0, g: 0, b: 0, a: 0}
   fadeSpeed: 1
+--- !u!114 &114333727122912042
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1880799391260844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ef7d61e222a1af46abb5a72c4e210c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MenuToOpen: {fileID: 0}
+  ContextualText: "You discovered the R34\u2019s gondolas! Learn more about them!"
 --- !u!114 &114464834082059690
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -767,6 +782,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotateSpeed: 90
+--- !u!114 &114770295953615094
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1880799391260844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc3f282e2acd57d4394ac90da4e35f93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSources: []
+  shouldPlay: 0
 --- !u!136 &136026496664439406
 CapsuleCollider:
   m_ObjectHideFlags: 1

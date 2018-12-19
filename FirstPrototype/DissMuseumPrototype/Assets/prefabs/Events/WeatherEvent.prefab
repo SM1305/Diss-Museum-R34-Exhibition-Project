@@ -36,13 +36,14 @@ GameObject:
   m_Component:
   - component: {fileID: 4377895967464250}
   - component: {fileID: 114580618040527934}
+  - component: {fileID: 114851654050723234}
   m_Layer: 0
   m_Name: WeatherEvent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1434835829782306
 GameObject:
   m_ObjectHideFlags: 0
@@ -113,8 +114,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1274169596528216}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.5197516, y: 0.47943538, z: -0.47943538, w: 0.5197516}
+  m_LocalPosition: {x: 843.71, y: 435.46, z: 19.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4188840343635872}
@@ -219,7 +220,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 49ac90bd5bd411b408c793be89908c5a, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -351,6 +352,19 @@ MonoBehaviour:
   MinMaxHeight: {x: -0.01, y: 0.01}
   minMaxRot: {x: -1, y: 1}
   thunder: {fileID: 82388880522198684}
+--- !u!114 &114851654050723234
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1274169596528216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc3f282e2acd57d4394ac90da4e35f93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSources: []
+  shouldPlay: 0
 --- !u!198 &198044840114224350
 ParticleSystem:
   m_ObjectHideFlags: 1

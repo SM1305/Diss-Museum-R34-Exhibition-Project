@@ -9,6 +9,8 @@ public class VolumeController : MonoBehaviour {
     public Sprite volumeOff;
     public Image currentSprite;
 
+    public static bool volumeEnabled = true;
+
     public AudioListener audioListener;
 
     public AudioSource[] audioSources;
@@ -43,6 +45,7 @@ public class VolumeController : MonoBehaviour {
             }
 
             currentSprite.sprite = volumeOn;
+            volumeEnabled = true;
         }
         else if (audioListener.isActiveAndEnabled)
         {
@@ -54,6 +57,7 @@ public class VolumeController : MonoBehaviour {
             }
 
             currentSprite.sprite = volumeOff;
+            volumeEnabled = false;
         }
     }
 }

@@ -8,13 +8,8 @@ public class Gondola_Audio : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-
         wind.Play();
         engine.Play();
+        
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }
