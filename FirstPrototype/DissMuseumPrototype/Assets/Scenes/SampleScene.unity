@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1618,7 +1618,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &110186429
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22547,17 +22547,17 @@ Prefab:
     - target: {fileID: 224020621401269708, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0.7799036
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224020621401269708, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224020621401269708, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0.99999994
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1789996743983052, guid: 7f6d2d3103e45ef46bf292e222952107, type: 2}
       propertyPath: m_Name
@@ -22621,7 +22621,7 @@ Prefab:
     - target: {fileID: 224764247323635610, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 3724
+      value: 3910
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f6d2d3103e45ef46bf292e222952107, type: 2}
@@ -23428,7 +23428,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1884016972}
   m_HandleRect: {fileID: 1884016971}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
