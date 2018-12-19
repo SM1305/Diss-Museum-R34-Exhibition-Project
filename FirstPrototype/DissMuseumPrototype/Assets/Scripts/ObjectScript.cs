@@ -5,6 +5,7 @@ using UnityEngine;
 public class ObjectScript : MonoBehaviour {
 
     public GameObject MenuToOpen;
+    public string ContextualText;
 
 	void Start () {
 		
