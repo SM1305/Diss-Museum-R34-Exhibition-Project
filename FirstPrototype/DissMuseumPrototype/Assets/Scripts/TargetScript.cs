@@ -32,14 +32,17 @@ public class TargetScript : MonoBehaviour, ITrackableEventHandler
             PlayerPrefs.SetInt(this.name, 0);
         }
 
-        /*if (this.GetComponentInChildren<Event_Audio>() != null && mTrackableBehaviour.CurrentStatus == TrackableBehaviour.Status.TRACKED)
+        if (this.GetComponentInChildren<Event_Audio>() != null)
         {
-            this.GetComponentInChildren<Event_Audio>().shouldPlay = true;
+            if(mTrackableBehaviour.CurrentStatus == TrackableBehaviour.Status.TRACKED)
+            {
+                this.GetComponentInChildren<Event_Audio>().shouldPlay = true;
+            }
+            else
+            {
+                this.GetComponentInChildren<Event_Audio>().shouldPlay = false;
+            }
         }
-        else
-        {
-            this.GetComponentInChildren<Event_Audio>().shouldPlay = false;
-        }*/
     }
 
     public void OnTrackableStateChanged(TrackableBehaviour.Status previousStatus, TrackableBehaviour.Status newStatus)
