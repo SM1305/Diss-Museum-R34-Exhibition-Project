@@ -64,7 +64,6 @@ public class MenuScript : MonoBehaviour {
 
     public void PlayClick()
     {
-        Debug.Log("Play Click");
         clicks.Play();
     }
 

@@ -9,7 +9,7 @@ public class BatterySaver : MonoBehaviour {
     public Sprite saverOff;
     public Image currentSprite;
 
-    InfomationScreen3dModels models;
+    //InfomationScreen3dModels models;
 
     public static bool batterySaver = false;
 
@@ -19,20 +19,20 @@ public class BatterySaver : MonoBehaviour {
         currentSprite = GetComponent<Image>();
         currentSprite.sprite = saverOff;
 
-        models = FindObjectOfType<InfomationScreen3dModels>();
+        //models = FindObjectOfType<InfomationScreen3dModels>();
     }
 
-    public void Update()
+    /*public void Update()
     {
-        /*if (batterySaver)
+        if (batterySaver)
         {
             models.enabled = false;
         }
         else
         {
             models.enabled = true;
-        }*/
-    }
+        }
+    }*/
 
     public void SetBatterySaver()
     {

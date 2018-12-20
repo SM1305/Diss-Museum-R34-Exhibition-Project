@@ -11,6 +11,8 @@ public class InfomationScreen3dModels : MonoBehaviour
     public GameObject[] renderTextureObjects;
 
     public Image[] backgrounds;
+    public RawImage[] modelBackgrounds;
+
 
     public Image activePanel;
     public Image[] panels;
@@ -28,6 +30,7 @@ public class InfomationScreen3dModels : MonoBehaviour
             for (int i = 0; i < panels.Length; i++)
             {
                 backgrounds[i].enabled = true;
+                modelBackgrounds[i].enabled = false;
 
                 if (panels[i] == activePanel)
                 {
@@ -49,6 +52,7 @@ public class InfomationScreen3dModels : MonoBehaviour
             for (int i = 0; i < panels.Length; i++)
             {
                 backgrounds[i].enabled = false;
+                modelBackgrounds[i].enabled = true;
 
                 if (panels[i] == activePanel)
                 {
