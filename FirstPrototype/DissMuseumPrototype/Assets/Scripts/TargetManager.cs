@@ -9,11 +9,17 @@ public class TargetManager : MonoBehaviour {
     [HideInInspector]
     public int nextTarget = 1;
 
+    
     public GameObject[] objects;
     public TargetScript[] targets;
 
     public GameObject contextualButton;
     public GameObject viewfinderSquare;
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     // Use this for initialization
     void Start ()

@@ -32,14 +32,14 @@ public class TargetScript : MonoBehaviour, ITrackableEventHandler
             PlayerPrefs.SetInt(this.name, 0);
         }
 
-        if (this.GetComponentInChildren<Event_Audio>() != null && mTrackableBehaviour.CurrentStatus == TrackableBehaviour.Status.TRACKED)
+        /*if (this.GetComponentInChildren<Event_Audio>() != null && mTrackableBehaviour.CurrentStatus == TrackableBehaviour.Status.TRACKED)
         {
             this.GetComponentInChildren<Event_Audio>().shouldPlay = true;
         }
         else
         {
             this.GetComponentInChildren<Event_Audio>().shouldPlay = false;
-        }
+        }*/
     }
 
     public void OnTrackableStateChanged(TrackableBehaviour.Status previousStatus, TrackableBehaviour.Status newStatus)
@@ -63,19 +63,17 @@ public class TargetScript : MonoBehaviour, ITrackableEventHandler
             targetObject.transform.localPosition = Vector3.zero;
             targetObject.transform.localEulerAngles = Vector3.zero;
 
-            if (this.GetComponentsInChildren<Animator>() != null)
+            /*if (this.GetComponentsInChildren<Animator>() != null)
             {
                 this.GetComponent<Animator>().SetTrigger("Play");
-            }
-
-            
-
+            }*/
 
             TargetManager.contextualButton.GetComponent<Animator>().SetTrigger("Open");
             TargetManager.contextualButton.GetComponentInChildren<Text>().text = targetObject.GetComponent<ObjectScript>().ContextualText;
             TargetManager.viewfinderSquare.SetActive(false);
+            TargetManager.contextualButton.GetComponent<ContextualARButton>().MenuToOpen = targetObject.GetComponent<ObjectScript>().MenuToOpen;
 
-            //snapScrolling.selectedPanelInt = targetInt;
+            snapScrolling.selectedPanelInt = targetInt;
         }
         else
         {
@@ -84,7 +82,6 @@ public class TargetScript : MonoBehaviour, ITrackableEventHandler
                 
                 TargetManager.contextualButton.GetComponent<Animator>().SetTrigger("Close");
                 TargetManager.viewfinderSquare.SetActive(true);
-                TargetManager.contextualButton.GetComponent<ContextualARButton>().MenuToOpen = targetObject.GetComponent<ObjectScript>().MenuToOpen;
                 
             }
         }

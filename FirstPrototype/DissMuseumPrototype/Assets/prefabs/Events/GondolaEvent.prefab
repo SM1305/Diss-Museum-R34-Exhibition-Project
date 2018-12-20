@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 95003584351129062}
   - component: {fileID: 82133319342228916}
   - component: {fileID: 82143816995694076}
-  - component: {fileID: 114464834082059690}
+  - component: {fileID: 114459427308422534}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -757,7 +757,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MenuToOpen: {fileID: 0}
   ContextualText: "You discovered the R34\u2019s gondolas! Learn more about them!"
---- !u!114 &114464834082059690
+--- !u!114 &114459427308422534
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -765,11 +765,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1067898153983482}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 536b0ed77c2c4dd4f9009035fe6dbb3d, type: 3}
+  m_Script: {fileID: 11500000, guid: c3d48c2003d1a1043a61f0b804212586, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wind: {fileID: 82133319342228916}
-  engine: {fileID: 82143816995694076}
+  audio: []
 --- !u!114 &114593287775689134
 MonoBehaviour:
   m_ObjectHideFlags: 1

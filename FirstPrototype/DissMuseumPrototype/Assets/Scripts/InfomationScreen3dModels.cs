@@ -19,7 +19,10 @@ public class InfomationScreen3dModels : MonoBehaviour
 
     void Update ()
     {
-        activePanel = panels[collectionMenu.selectedPanelInt - 1];
+        if (collectionMenu.selectedPanelInt > 0)
+        {
+            activePanel = panels[collectionMenu.selectedPanelInt - 1];
+        }
         if (BatterySaver.batterySaver)
         {
             for (int i = 0; i < panels.Length; i++)
@@ -52,7 +55,7 @@ public class InfomationScreen3dModels : MonoBehaviour
                     activeObject = renderTextureObjects[i];
                 }
 
-                if (activePanel.isActiveAndEnabled)
+                if (activePanel && activePanel.isActiveAndEnabled)
                 {
                     activeObject.SetActive(true);
                 }

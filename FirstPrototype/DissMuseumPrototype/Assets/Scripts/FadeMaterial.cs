@@ -13,7 +13,7 @@ public class FadeMaterial : MonoBehaviour
     {
         colour = GetComponent<Renderer>().material.color;
 
-        StartCoroutine("FadeTo (1.0f, 0.5f)");
+        //StartCoroutine("FadeTo (1.0f, 0.5f)");
 
     }
 	
