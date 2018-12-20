@@ -9,6 +9,7 @@ public class ContextualARButton : MonoBehaviour
 
     public void OpenContextualMenu()
     {
+        this.GetComponent<Animator>().SetTrigger("Hide");
         if(MenuToOpen != null)
         {
             MenuToOpen.SetActive(true);

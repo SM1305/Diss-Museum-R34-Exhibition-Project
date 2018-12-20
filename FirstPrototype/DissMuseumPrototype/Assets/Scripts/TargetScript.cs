@@ -66,10 +66,10 @@ public class TargetScript : MonoBehaviour, ITrackableEventHandler
             targetObject.transform.localPosition = Vector3.zero;
             targetObject.transform.localEulerAngles = Vector3.zero;
 
-            /*if (this.GetComponentsInChildren<Animator>() != null)
+            if (this.GetComponentInChildren<Animator>() != null)
             {
-                this.GetComponent<Animator>().SetTrigger("Play");
-            }*/
+                this.GetComponentInChildren<Animator>().SetTrigger("Play");
+            }
 
             TargetManager.contextualButton.GetComponent<Animator>().SetTrigger("Open");
             TargetManager.contextualButton.GetComponentInChildren<Text>().text = targetObject.GetComponent<ObjectScript>().ContextualText;
