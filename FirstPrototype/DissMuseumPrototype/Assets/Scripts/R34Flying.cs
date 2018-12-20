@@ -7,14 +7,10 @@ public class R34Flying : MonoBehaviour {
     public float MoveSpeed;
     public float RotSpeed;
     public Vector2 MinMaxHeight;
-    public Vector2 minMaxRot;
-
-    public AudioSource thunder;
-    
+    public Vector2 minMaxRot;  
 
 	// Use this for initialization
 	void Start () {
-        thunder.Play();
 	}
 	
 	// Update is called once per frame

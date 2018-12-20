@@ -351,7 +351,6 @@ MonoBehaviour:
   RotSpeed: 1
   MinMaxHeight: {x: -0.01, y: 0.01}
   minMaxRot: {x: -1, y: 1}
-  thunder: {fileID: 82388880522198684}
 --- !u!114 &114851654050723234
 MonoBehaviour:
   m_ObjectHideFlags: 1
