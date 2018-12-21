@@ -1,0 +1,965 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BASIL&#39;S BOIS - professional-discussion</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <style>
+        /* === GENERAL === */
+
+body {
+    font-family: "Whitney", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    object-fit: contain;
+}
+
+.pre {
+    font-family: "Consolas", "Courier New", Courier, Monospace;
+    white-space: pre-wrap;
+}
+
+.pre--multiline {
+    margin-top: 4px;
+    padding: 8px;
+    border: 2px solid;
+    border-radius: 5px;    
+}
+
+.pre--inline {
+    padding: 2px;
+    border-radius: 3px;
+}
+
+.emoji {
+    width: 24px;
+    height: 24px;
+    margin: 0 1px;
+    vertical-align: middle;
+}
+
+.emoji--small {
+    width: 16px;
+    height: 16px;
+}
+
+.emoji--large {
+    width: 32px;
+    height: 32px;
+}
+
+.mention {
+    font-weight: 600;
+}
+
+/* === INFO === */
+
+.info {
+    display: flex;
+    max-width: 100%;
+    margin: 0 5px 10px 5px;    
+}
+
+.info__guild-icon-container {
+    flex: 0;
+}
+
+.info__guild-icon {
+    max-width: 88px;
+    max-height: 88px;
+}
+
+.info__metadata {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.info__guild-name {
+    font-size: 1.4em;
+}
+
+.info__channel-name {
+    font-size: 1.2em;
+}
+
+.info__channel-topic {
+    margin-top: 2px;
+}
+
+.info__channel-message-count {
+    margin-top: 2px;
+}
+
+.info__channel-date-range {
+    margin-top: 2px;
+}
+
+/* === CHATLOG === */
+
+.chatlog {
+    max-width: 100%;
+}
+
+.chatlog__message-group {
+    display: flex;
+    margin: 0 10px;
+    padding: 15px 0;
+    border-top: 1px solid;
+}
+
+.chatlog__author-avatar-container {
+    flex: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.chatlog__author-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.chatlog__messages {
+    flex: 1;
+    min-width: 50%;
+    margin-left: 20px;
+}
+
+.chatlog__author-name {
+    font-size: 1em;
+}
+
+.chatlog__timestamp {
+    margin-left: 5px;
+    font-size: .75em;
+}
+
+.chatlog__content {
+    padding-top: 5px;
+    font-size: .9375em;
+    word-wrap: break-word;
+}
+
+.chatlog__edited-timestamp {
+    margin-left: 5px;
+    font-size: .8em;
+}
+
+.chatlog__attachment {
+    margin: 5px 0;
+}
+
+.chatlog__attachment-thumbnail {
+    max-width: 50%;
+    max-height: 500px;
+    border-radius: 3px;
+}
+
+.chatlog__embed {
+    display: flex;
+    max-width: 520px;
+    margin-top: 5px;
+}
+
+.chatlog__embed-color-pill {
+    flex-shrink: 0;
+    width: 4px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.chatlog__embed-content-container {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 10px;
+    border: 1px solid;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.chatlog__embed-content {
+    width: 100%;
+    display: flex;
+}
+
+.chatlog__embed-text {
+    flex: 1;
+}
+
+.chatlog__embed-author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.chatlog__embed-author-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 9px;
+    border-radius: 50%;
+}
+
+.chatlog__embed-author-name {
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.chatlog__embed-title {
+    margin-bottom: 4px;
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.chatlog__embed-description {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.chatlog__embed-fields {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chatlog__embed-field {
+    flex: 0;
+    min-width: 100%;
+    max-width: 506px;
+    padding-top: 10px;
+}
+
+.chatlog__embed-field--inline {
+    flex: 1;
+    flex-basis: auto;
+    min-width: 150px;
+}
+
+.chatlog__embed-field-name {
+    margin-bottom: 4px;
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.chatlog__embed-field-value {
+    font-size: .875em;
+    font-weight: 500;
+}
+
+.chatlog__embed-thumbnail {
+    flex: 0;
+    margin-left: 20px;
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 3px;
+}
+
+.chatlog__embed-image-container {
+    margin-top: 10px;
+}
+
+.chatlog__embed-image {    
+    max-width: 500px;
+    max-height: 400px;
+    border-radius: 3px;
+}
+
+.chatlog__embed-footer {
+    margin-top: 10px;
+}
+
+.chatlog__embed-footer-icon {
+    margin-right: 4px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.chatlog__embed-footer-text {
+    font-weight: 600;
+    font-size: .75em;
+}
+
+.chatlog__reactions {
+    display: flex;    
+}
+
+.chatlog__reaction {
+    margin: 6px 2px 2px 2px;
+    padding: 2px 6px 2px 2px;
+    border-radius: 3px;
+}
+
+.chatlog__reaction-emoji {
+    margin-left: 3px;
+    vertical-align: middle;
+}
+
+.chatlog__reaction-count {
+    font-size: .875em;
+    vertical-align: middle;
+}
+/* === GENERAL === */
+
+body {
+    background-color: #36393e;
+    color: #ffffffb3;
+}
+
+a {
+    color: #0096cf;
+}
+
+.pre {
+    background-color: #2f3136;
+}
+
+.pre--multiline {
+    border-color: #282b30;
+    color: #839496;
+}
+
+.mention {
+    background-color: #738bd71a;
+    color: #7289da;
+}
+
+/* === INFO === */
+
+.info__guild-name {
+    color: #ffffff;
+}
+
+.info__channel-name {
+    color: #ffffff;
+}
+
+.info__channel-topic {
+    color: #ffffff;
+}
+
+/* === CHATLOG === */
+
+.chatlog__message-group {
+    border-color: #ffffff0a;
+}
+
+.chatlog__author-name {
+    color: #ffffff;
+}
+
+.chatlog__timestamp {
+    color: #ffffff33;
+}
+
+.chatlog__edited-timestamp {
+    color: #ffffff33;
+}
+
+.chatlog__embed-content-container {
+    background-color: #2e30364d;
+    border-color: #2e303699;
+}
+
+.chatlog__embed-author-name {
+    color: #ffffff;
+}
+
+.chatlog__embed-author-name-link {
+    color: #ffffff;
+}
+
+.chatlog__embed-title {
+    color: #ffffff;
+}
+
+.chatlog__embed-description {
+    color: #ffffff99;
+}
+
+.chatlog__embed-field-name {
+    color: #ffffff;
+}
+
+.chatlog__embed-field-value {
+    color: #ffffff99;
+}
+
+.chatlog__embed-footer {
+    color: #ffffff99;
+}
+
+.chatlog__reaction {
+    background-color: #ffffff0a;
+}
+
+.chatlog__reaction-count {
+    color: #ffffff4d;
+}
+    </style>
+</head>
+<body>
+    
+<div class="info">
+    <div class="info__guild-icon-container">
+        <img class="info__guild-icon" src="https://cdn.discordapp.com/icons/419602848569884673/b7c0d8ecb117e43065d5919078ccf1ee.png" />
+    </div>
+    <div class="info__metadata">
+        <div class="info__guild-name">BASIL&#39;S BOIS</div>
+        <div class="info__channel-name">professional-discussion</div>
+        
+
+        <div class="info__channel-message-count">36 messages</div>
+        
+            <div class="info__channel-date-range">
+                    Between 22-Oct-18 12:00 AM and 21-Dec-18 12:00 AM
+            </div>
+    </div>
+</div>
+
+<div class="chatlog">
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/239013478361202688/a_a4b08ba39888b6eab48c946134957ca2.gif" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="SM1305#4499">SM1305</span>
+                <span class="chatlog__timestamp">22-Oct-18 12:47 PM</span>
+
+                        <div class="chatlog__content">
+                            This video is to demonstrate some functionality of the application and is not representative of the art and visual effects which will be included in the final version.<br />In its current state it would mislead as to the quality of the applications projected development.
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/92754573143339008/c442851d8d1e35089889041bd903dba1.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Henry#9302">Henry</span>
+                <span class="chatlog__timestamp">22-Oct-18 03:10 PM</span>
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="https://cdn.discordapp.com/attachments/494148860009119745/503933247281954816/unknown.png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="https://cdn.discordapp.com/attachments/494148860009119745/503933247281954816/unknown.png" />
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="https://cdn.discordapp.com/attachments/494148860009119745/503933333689073694/unknown.png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="https://cdn.discordapp.com/attachments/494148860009119745/503933333689073694/unknown.png" />
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="https://cdn.discordapp.com/attachments/494148860009119745/503933412046798849/unknown.png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="https://cdn.discordapp.com/attachments/494148860009119745/503933412046798849/unknown.png" />
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="https://cdn.discordapp.com/attachments/494148860009119745/503933469928456192/unknown.png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="https://cdn.discordapp.com/attachments/494148860009119745/503933469928456192/unknown.png" />
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="https://cdn.discordapp.com/attachments/494148860009119745/503934782485299210/unknown.png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="https://cdn.discordapp.com/attachments/494148860009119745/503934782485299210/unknown.png" />
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/239013478361202688/a_a4b08ba39888b6eab48c946134957ca2.gif" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="SM1305#4499">SM1305</span>
+                <span class="chatlog__timestamp">31-Oct-18 12:14 AM</span>
+
+                        <div class="chatlog__content">
+                            JIRA sprint for October29-November5 is now live
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            As mentioned earlier, I had intended to have the sprint up and running earlier today, but had to prioritise my group module tasks.
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/92754573143339008/c442851d8d1e35089889041bd903dba1.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Henry#9302">Henry</span>
+                <span class="chatlog__timestamp">31-Oct-18 05:43 PM</span>
+
+                        <div class="chatlog__content">
+                            Hey guys I have made a start on my event task for this week.  Could you give me some feedback on the engine particles?  Should it look like exhaust fumes?  I have made them dark as I feel like in 1919 they did not have very efficient engines.  Do you think the placement is correct as well?  Should it be coming from the propellers or is there a separate section for the engine?
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="https://cdn.discordapp.com/attachments/494148860009119745/507248399289024512/2018-10-31_17-41-28.gif">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="https://cdn.discordapp.com/attachments/494148860009119745/507248399289024512/2018-10-31_17-41-28.gif" />
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            Also, do you think we should ask Peter to allow us to edit the propellers or would one of you be able to do so.  I would like to be able to rotate them while the animations are playing.  Or would this not be very efficient for the mobile platform.
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            I have synced the project using Unity colab but unfortunately I am unable to push the repository up as I do not have permissions.
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="https://cdn.discordapp.com/attachments/494148860009119745/507249763125821443/unknown.png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="https://cdn.discordapp.com/attachments/494148860009119745/507249763125821443/unknown.png" />
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/203569300861091841/a_2247379c45b8932e277d5ea483c6f7de.gif" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Elliot#1234">Elliot</span>
+                <span class="chatlog__timestamp">31-Oct-18 05:54 PM</span>
+
+                        <div class="chatlog__content">
+                            For the particle effect, I think that it should be bigger,  thats quite small there and that is quite zoomed in, and it will only be seen on a mobile display in the end, i think the actual effect its giving is good though<br /><br />for the GitHub issue<br />George had a similar problem earlier, he fixed it by making sure he was signed in properly in these 2 places
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="https://cdn.discordapp.com/attachments/494148860009119745/507251020842270730/unknown.png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="https://cdn.discordapp.com/attachments/494148860009119745/507251020842270730/unknown.png" />
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="https://cdn.discordapp.com/attachments/494148860009119745/507251032422875147/unknown.png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="https://cdn.discordapp.com/attachments/494148860009119745/507251032422875147/unknown.png" />
+                            </a>
+                        </div>
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/92754573143339008/c442851d8d1e35089889041bd903dba1.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Henry#9302">Henry</span>
+                <span class="chatlog__timestamp">31-Oct-18 06:01 PM</span>
+
+                        <div class="chatlog__content">
+                            Ah I checked the “Accounts” section I will try the “Git” tab shortly thank you! And I will make the particle system bigger too
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/92754573143339008/c442851d8d1e35089889041bd903dba1.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Henry#9302">Henry</span>
+                <span class="chatlog__timestamp">31-Oct-18 07:30 PM</span>
+
+                        <div class="chatlog__content">
+                            I have tried that and it is still not working, saying the same thing.  I have restarted computer and signed in and out multiple times and still nothing.
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            However because I have pushed it on the Unity Collaboration you will still be able to access the work?
+
+                        </div>
+
+
+
+                        <div class="chatlog__content">
+                            Is this size better?
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="https://cdn.discordapp.com/attachments/494148860009119745/507276656973447186/unknown.png">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="https://cdn.discordapp.com/attachments/494148860009119745/507276656973447186/unknown.png" />
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            And should it be on all the propellers?
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/203569300861091841/a_2247379c45b8932e277d5ea483c6f7de.gif" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Elliot#1234">Elliot</span>
+                <span class="chatlog__timestamp">31-Oct-18 07:38 PM</span>
+
+                        <div class="chatlog__content">
+                            I definitely think that looks better, and yes, i think it would look good on all of the propellers, i know you can add some random variables to particles, you could try that to make them all look slightly different
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/92754573143339008/c442851d8d1e35089889041bd903dba1.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Henry#9302">Henry</span>
+                <span class="chatlog__timestamp">31-Oct-18 07:47 PM</span>
+
+                        <div class="chatlog__content">
+                            How about this?  I might add some white into the smoke?  Or keep it a dirty black?
+
+                        </div>
+
+                        <div class="chatlog__attachment">
+                            <a href="https://cdn.discordapp.com/attachments/494148860009119745/507279456675692564/2018-10-31_19-46-36.gif">
+                                
+                                    <img class="chatlog__attachment-thumbnail" src="https://cdn.discordapp.com/attachments/494148860009119745/507279456675692564/2018-10-31_19-46-36.gif" />
+                            </a>
+                        </div>
+
+
+                        <div class="chatlog__content">
+                            They are all on a Constant between two values or between two curves
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/239013478361202688/a_a4b08ba39888b6eab48c946134957ca2.gif" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="SM1305#4499">SM1305</span>
+                <span class="chatlog__timestamp">31-Oct-18 08:20 PM</span>
+
+                        <div class="chatlog__content">
+                            I think the size is appropriate, depending on how much the &quot;take off&quot; moves the ship, potentially extend the lifetime of the particles to make them more apparent?
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/203569300861091841/a_2247379c45b8932e277d5ea483c6f7de.gif" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Elliot#1234">Elliot</span>
+                <span class="chatlog__timestamp">31-Oct-18 08:21 PM</span>
+
+                        <div class="chatlog__content">
+                            Also i know its easily changeable but remember that this is going on a poster so the target will need to be vertical and not on the ground
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/239013478361202688/a_a4b08ba39888b6eab48c946134957ca2.gif" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="SM1305#4499">SM1305</span>
+                <span class="chatlog__timestamp">31-Oct-18 08:21 PM</span>
+
+                        <div class="chatlog__content">
+                            I think the colour may need to be tested in app. I would have suggested a lighter shade, but I&#39;m not sure whether the lighter shade will be defined enough in the AR experience
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/239013478361202688/a_a4b08ba39888b6eab48c946134957ca2.gif" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="SM1305#4499">SM1305</span>
+                <span class="chatlog__timestamp">04-Nov-18 08:56 PM</span>
+
+                        <div class="chatlog__content">
+                            Don&#39;t forget to advance tasks in JIRA this sprint. I&#39;ve just logged and completed times for our end of sprint meetings (for each of our tasks), but from our meeting I know some tasks have been completed and JIRA doesn&#39;t reflect this currently
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/92754573143339008/c442851d8d1e35089889041bd903dba1.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Henry#9302">Henry</span>
+                <span class="chatlog__timestamp">20-Nov-18 08:03 PM</span>
+
+                        <div class="chatlog__content">
+                            Hey guys, I think all of the work that was deleted from my end has now been uploaded except for the battery saver functionality, currently in the process of bringing that back up to its previous state.  Could you give it a quick glance over and let me know if there is something that I have forgotten?  I&#39;m pretty sure it&#39;s all there (excluding this weeks tasks).
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/239013478361202688/a_a4b08ba39888b6eab48c946134957ca2.gif" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="SM1305#4499">SM1305</span>
+                <span class="chatlog__timestamp">20-Nov-18 09:37 PM</span>
+
+                        <div class="chatlog__content">
+                            I&#39;ll have a look over it this evening, if I see anything I&#39;ll let you know!
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/239013478361202688/a_a4b08ba39888b6eab48c946134957ca2.gif" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="SM1305#4499">SM1305</span>
+                <span class="chatlog__timestamp">21-Nov-18 02:06 AM</span>
+
+                        <div class="chatlog__content">
+                            Had some run throughs and everything seems okay - only issue I had was that on PC the collection screen mascot isnt updating with the selected panel (always 1st cat in array).
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/92754573143339008/c442851d8d1e35089889041bd903dba1.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Henry#9302">Henry</span>
+                <span class="chatlog__timestamp">21-Nov-18 11:21 AM</span>
+
+                        <div class="chatlog__content">
+                            Ok so that is broken again?  I will have another look through it.
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/239013478361202688/a_a4b08ba39888b6eab48c946134957ca2.gif" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="SM1305#4499">SM1305</span>
+                <span class="chatlog__timestamp">04-Dec-18 02:27 PM</span>
+
+                        <div class="chatlog__content">
+                            JIRA sprint is now live with task to improve last week&#39;s work and reallocation of some tasks as discussed
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/92754573143339008/c442851d8d1e35089889041bd903dba1.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Henry#9302">Henry</span>
+                <span class="chatlog__timestamp">18-Dec-18 12:11 PM</span>
+
+                        <div class="chatlog__content">
+                            For the sounds on click, are we wanting it whenever the user clicks or only on successful button presses?
+
+                                <span class="chatlog__edited-timestamp" title="18-Dec-18 12:13 PM">(edited)</span>
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/203569300861091841/a_2247379c45b8932e277d5ea483c6f7de.gif" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Elliot#1234">Elliot</span>
+                <span class="chatlog__timestamp">18-Dec-18 12:14 PM</span>
+
+                        <div class="chatlog__content">
+                            only on successful button presses
+
+                        </div>
+
+
+
+            </div>
+        </div>
+        <div class="chatlog__message-group">
+            <div class="chatlog__author-avatar-container">
+                <img class="chatlog__author-avatar" src="https://cdn.discordapp.com/avatars/92754573143339008/c442851d8d1e35089889041bd903dba1.png" />
+            </div>            
+            <div class="chatlog__messages">
+                <span class="chatlog__author-name" title="Henry#9302">Henry</span>
+                <span class="chatlog__timestamp">18-Dec-18 12:50 PM</span>
+
+                        <div class="chatlog__content">
+                            Cool will try sort at some point
+
+                        </div>
+
+
+
+            </div>
+        </div>
+</div>
+
+</body>
+</html>
