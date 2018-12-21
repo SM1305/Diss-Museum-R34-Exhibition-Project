@@ -30,7 +30,7 @@ public class SnapScrolling : MonoBehaviour
     public bool isScrolling;
     public int selectedPanelInt;
     public GameObject selectedPanel;
-
+    public float distance;
 
     void Start ()
     {
@@ -85,7 +85,7 @@ public class SnapScrolling : MonoBehaviour
 
         for (int i = 0; i < panelCount; i++)
         {
-            float distance = Mathf.Abs(contentRect.anchoredPosition.x - panelPosition[i].x);
+            distance = Mathf.Abs(contentRect.anchoredPosition.x - panelPosition[i].x);
             if (distance < nearestPos)
             {
                 nearestPos = distance;

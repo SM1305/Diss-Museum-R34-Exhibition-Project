@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 222570953301058972}
   - component: {fileID: 114447412720126682}
   m_Layer: 5
-  m_Name: Text
+  m_Name: ScrollingText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ GameObject:
   - component: {fileID: 114384645103465196}
   - component: {fileID: 114593538520057310}
   m_Layer: 5
-  m_Name: Image
+  m_Name: InformationImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -126,14 +126,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.41509432, g: 0.41509432, b: 0.41509432, a: 0.40392157}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: aa262dbd01b96e24bbb73b9f73a43e60, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -180,7 +180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -207,7 +207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7960785, g: 0.9058824, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -234,8 +234,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -248,54 +248,28 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 64
-    m_Alignment: 4
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in pellentesque
-    dui. Quisque convallis lorem ut felis vestibulum, fringilla fringilla magna placerat.
-    Duis et mauris ante.
-
-    d
-
-    d
-
-    d
-
-    d
-
-    d
-
-    d
-
-    d
-
-    d
-
-    d
-
-    d
-
-    d
-
-    d
-
-    d
-
-    d
-
-    d
-
-    d
-
-    d
-
-
-    d
-
-    d'
+  m_Text: "\nBeneath the main body of the airship, suspended by long, wooden struts
+    and braced rigging wires, the forward gondola appeared to be a single unit some
+    50 feet long.\nHowever, it was actually made up of two parts separated by a narrow
+    gap, which was intended to prevent vibration from the engine affecting the wireless
+    telegraphy equipment. \r\n\nIncorporated in the forward section were a control
+    room and a small wireless cabin, below which, during flight, trailed a long aerial.
+    \n\nThe control cabin was fronted with 'Triplex' safety glass. Here were the steering
+    and elevator wheels, the gas-valve controls, the engine telegraph, the various
+    navigational and wireless telegraphy instruments and the toggles controlling the
+    emergency forward water ballast. \r\n\nConnecting the control-cabin with the keel
+    was a ladder, protected from the elements by a streamlined canvas cover. Another
+    cover similarly enclosed the numerous control-wire connections that led up into
+    the hull.\n\nIn the rear section of the forward gondola was the first of the engines,
+    driving a single pusher propeller 17 feet in diameter.\r\nHandling rails were
+    mounted on each side and underneath the Gondola were two 'bumping bags' of compressed
+    air positioned to help cushion landing shocks.\r"
 --- !u!114 &114521383205048758
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -377,8 +351,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114004251718631940}
   m_HandleRect: {fileID: 224020621401269708}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.3062788
+  m_Value: 0.00000003973873
+  m_Size: 0.36336645
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -433,8 +407,8 @@ RectTransform:
   m_Father: {fileID: 224196187796619778}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.7411254}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -471,10 +445,10 @@ RectTransform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -328.78}
-  m_SizeDelta: {x: 961.2, y: 657.55}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0.55}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -60, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224683549851911196
 RectTransform:
@@ -493,7 +467,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 4.975006, y: 0}
+  m_AnchoredPosition: {x: 4.9765625, y: 0}
   m_SizeDelta: {x: -9.9501, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224764247323635610
@@ -509,10 +483,10 @@ RectTransform:
   m_Father: {fileID: 224683549851911196}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -46.8, y: 0.00012207031}
-  m_SizeDelta: {x: 813.7, y: 2081.6}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0.95, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 3687.5}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!224 &224949045270762126
 RectTransform:
@@ -528,8 +502,8 @@ RectTransform:
   m_Father: {fileID: 224683549851911196}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 439.8, y: 4.975}
-  m_SizeDelta: {x: 71.6, y: 647.5}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -15, y: 0}
+  m_SizeDelta: {x: 30, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
