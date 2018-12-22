@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -90,7 +90,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1760,7 +1760,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &110186429
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15902,6 +15902,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 309050994}
+        m_MethodName: StartAnimation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &875936725
@@ -23922,17 +23933,17 @@ Prefab:
     - target: {fileID: 224020621401269708, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 0.73537576
       objectReference: {fileID: 0}
     - target: {fileID: 224020621401269708, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224020621401269708, guid: 7f6d2d3103e45ef46bf292e222952107,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 0.99999994
       objectReference: {fileID: 0}
     - target: {fileID: 1789996743983052, guid: 7f6d2d3103e45ef46bf292e222952107, type: 2}
       propertyPath: m_Name
@@ -30514,6 +30525,38 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 452640c03674db848870cfa40f0e7367, type: 2}
+    - target: {fileID: 4129375915210990, guid: 3155967208e7a884d9ec7af8ad94483b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -1.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 4129375915210990, guid: 3155967208e7a884d9ec7af8ad94483b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 2.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 4129375915210990, guid: 3155967208e7a884d9ec7af8ad94483b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 4129375915210990, guid: 3155967208e7a884d9ec7af8ad94483b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0.005432208
+      objectReference: {fileID: 0}
+    - target: {fileID: 4129375915210990, guid: 3155967208e7a884d9ec7af8ad94483b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.93637025
+      objectReference: {fileID: 0}
+    - target: {fileID: 4129375915210990, guid: 3155967208e7a884d9ec7af8ad94483b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0.014505171
+      objectReference: {fileID: 0}
+    - target: {fileID: 4129375915210990, guid: 3155967208e7a884d9ec7af8ad94483b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: -0.35067204
+      objectReference: {fileID: 0}
+    - target: {fileID: 4129375915210990, guid: 3155967208e7a884d9ec7af8ad94483b, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 361.775
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3155967208e7a884d9ec7af8ad94483b, type: 2}
   m_IsPrefabAsset: 0
