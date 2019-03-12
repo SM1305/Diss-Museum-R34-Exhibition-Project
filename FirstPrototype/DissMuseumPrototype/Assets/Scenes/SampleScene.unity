@@ -90,7 +90,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -10054,7 +10054,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -300.41998}
-  m_SizeDelta: {x: 600, y: 600}
+  m_SizeDelta: {x: 700, y: 700}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &369542377
 MonoBehaviour:
@@ -10081,15 +10081,15 @@ MonoBehaviour:
   snapScrolling: {fileID: 174797176}
   mascotText: {fileID: 1323122790}
   mascotSprites:
-  - {fileID: 21300000, guid: c12b32b11a2b2a54aba03962ac0f59e3, type: 3}
-  - {fileID: 21300000, guid: e58b6336948ea5c488271cf06ea38701, type: 3}
-  - {fileID: 21300000, guid: 8fbcba60177b1bd4e9c45de54f1baa90, type: 3}
-  - {fileID: 21300000, guid: 727e07ba31ce92c49aa043a7ba8e121f, type: 3}
-  - {fileID: 21300000, guid: fc4c94332017164478ae783b30e4c068, type: 3}
-  - {fileID: 21300000, guid: 13cd5933ea8c33b46ad3dba9b7450ba9, type: 3}
-  - {fileID: 21300000, guid: 967b75c7b93de1745b4e753ea230ae80, type: 3}
-  - {fileID: 21300000, guid: 2e11d54b16ceaae4f8f40c67606add7b, type: 3}
-  - {fileID: 21300000, guid: bde7fd9e7c0774c408cf3e480de9c2b9, type: 3}
+  - {fileID: 21300000, guid: 5663f01b10afe624aa952383550d7a89, type: 3}
+  - {fileID: 21300000, guid: d870496f91e862141a4f529951e16950, type: 3}
+  - {fileID: 21300000, guid: a894182e60ea319468613562b1846426, type: 3}
+  - {fileID: 21300000, guid: 79b94744909c66c4b8a27d424d152251, type: 3}
+  - {fileID: 21300000, guid: a122e57bc785da4418d9593a5b315bb8, type: 3}
+  - {fileID: 21300000, guid: 9b1d147b889177c4db0d68a90710e4a6, type: 3}
+  - {fileID: 21300000, guid: 0cd5474ca8bf80d41b367e8e3b394e8d, type: 3}
+  - {fileID: 21300000, guid: 0a14834dbb2343140b0dfe4ee46b355c, type: 3}
+  - {fileID: 21300000, guid: 18a9e16e90bd314469f8dba6564347cf, type: 3}
   mascotTexts:
   - Press the panel below to learn more about me, or scroll the panels to learn about
     other discovered voyage events
@@ -10124,7 +10124,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: c12b32b11a2b2a54aba03962ac0f59e3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5663f01b10afe624aa952383550d7a89, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
