@@ -32,6 +32,8 @@ public class SnapScrolling : MonoBehaviour
     public GameObject selectedPanel;
     public float distance;
 
+    Vector2 sizeToSet;
+
     void Start ()
     {
         instance = this;
@@ -42,15 +44,6 @@ public class SnapScrolling : MonoBehaviour
         panelPosition = new Vector2[panelCount];
 
         panelScale = new Vector2[panelCount];
-
-        /*for (int i = 0; i < panelCount; i++)
-        {
-            panelArray[i] = Instantiate(panelPrefab[i], transform, false);
-            if (i == 0) continue;
-            panelArray[i].transform.localPosition = new Vector2(panelArray[i-1].transform.localPosition.x + panelPrefab[i].GetComponent<RectTransform>().sizeDelta.x + panelOffset, panelArray[i].transform.localPosition.y);
-
-            panelPosition[i] = -panelArray[i].transform.localPosition;
-        }*/
 
         int i = 0;
         Transform lastChild = null;
@@ -64,7 +57,7 @@ public class SnapScrolling : MonoBehaviour
                 continue;
             }
             child.transform.localPosition = new Vector2(lastChild.transform.localPosition.x + child.GetComponent<RectTransform>().sizeDelta.x + panelOffset, child.transform.localPosition.y);
-
+            
             panelArray[i] = child.gameObject;
             panelPosition[i] = -panelArray[i].transform.localPosition;
             
@@ -76,6 +69,7 @@ public class SnapScrolling : MonoBehaviour
 
     void FixedUpdate ()
     {
+        
         if (contentRect.anchoredPosition.x >= panelPosition[0].x && !isScrolling || contentRect.anchoredPosition.x <= panelPosition[panelPosition.Length - 1].x && !isScrolling)
         {
             scrollRect.inertia = false;
@@ -95,10 +89,13 @@ public class SnapScrolling : MonoBehaviour
                 //Debug.Log(selectedPanel.name);
             }
 
-            float scale = Mathf.Clamp(1 / (distance / panelOffset) * scaleOffset, 0.5f, 1f);
+            float scale = Mathf.Clamp(1 / (distance / (panelOffset)) * scaleOffset, 0.5f, 1f);
             panelScale[i].x = Mathf.SmoothStep(panelArray[i].transform.localScale.x, scale + scaleSizeTweak, scaleSpeed * Time.fixedDeltaTime);
             panelScale[i].y = Mathf.SmoothStep(panelArray[i].transform.localScale.x, scale + scaleSizeTweak, scaleSpeed * Time.fixedDeltaTime);
             panelArray[i].transform.localScale = panelScale[i];
+
+            //Debug.Log(panelArray[i].GetComponent<RectTransform>().sizeDelta);
+            panelArray[i].GetComponent<RectTransform>().sizeDelta = new Vector2(panelArray[i].transform.parent.GetComponent<RectTransform>().rect.height, panelArray[i].transform.parent.GetComponent<RectTransform>().rect.height);
         }
 
         float scrollVelocity = Mathf.Abs(scrollRect.velocity.x);
