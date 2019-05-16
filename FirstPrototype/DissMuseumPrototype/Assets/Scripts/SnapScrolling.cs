@@ -99,9 +99,9 @@ public class SnapScrolling : MonoBehaviour
             }
 
             float scale = Mathf.Clamp(1 / (distance / (panelOffset)) * scaleOffset, 0.5f, 1f);
-            panelScale[i].x = Mathf.SmoothStep(panelArray[i].transform.localScale.x, scale + scaleSizeTweak, scaleSpeed * Time.fixedDeltaTime);
-            panelScale[i].y = Mathf.SmoothStep(panelArray[i].transform.localScale.x, scale + scaleSizeTweak, scaleSpeed * Time.fixedDeltaTime);
-            panelArray[i].transform.localScale = panelScale[i];
+            panelScale[i].x = Mathf.Clamp(Mathf.SmoothStep(panelArray[i].transform.localScale.x, scale + scaleSizeTweak, scaleSpeed * Time.fixedDeltaTime), 0, 1);
+            panelScale[i].y = Mathf.Clamp(Mathf.SmoothStep(panelArray[i].transform.localScale.x, scale + scaleSizeTweak, scaleSpeed * Time.fixedDeltaTime), 0, 1);
+        panelArray[i].transform.localScale = panelScale[i];
             
 
             //Debug.Log(panelArray[i].GetComponent<RectTransform>().sizeDelta);

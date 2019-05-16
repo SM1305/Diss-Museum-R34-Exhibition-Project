@@ -37,12 +37,13 @@ public class ScrollingButton : MonoBehaviour {
         GameObject collectionScreen = GameObject.FindGameObjectWithTag("CollectionScreen");
         collectionScreen.SetActive(false);
 
-        anim.SetBool("Clicked", false);
+        //.SetBool("Clicked", false);
         infoScreen.SetActive(true);
     }
 
     public void OnClick()
     {
-        anim.SetBool("Clicked", true);
+        //anim.SetBool("Clicked", true);
+        OpenInfoScreen();
     }
 }
