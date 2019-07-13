@@ -10,7 +10,7 @@ public class CollectionScreenMascot : MonoBehaviour
     public SnapScrolling snapScrolling;
     Image image;
     public Text mascotText;
-    public Sprite[] mascotSprites;
+    public Image[] mascotSprites;
     public string[] mascotTexts;
 
     public Image thisPanel;
@@ -39,7 +39,21 @@ public class CollectionScreenMascot : MonoBehaviour
             if (LastPanelInt != i)
             {
                 //mascotText.GetComponentInParent<Animator>().SetTrigger("Close");
-                image.sprite = mascotSprites[i];
+                int j = 0;
+                foreach (var item in mascotSprites)
+                {
+                    if (item.enabled && j != i)
+                    {
+                        item.enabled = false;
+                    }
+                    else
+                    if(j == i)
+                    {
+                        item.enabled = true;
+                    }
+
+                    j++;
+                }
                 mascotText.text = mascotTexts[i];
                 mascotText.GetComponentInParent<Animator>().SetTrigger("Open");
                 LastPanelInt = i;
@@ -48,9 +62,23 @@ public class CollectionScreenMascot : MonoBehaviour
         }
         else // If panel is still locked, defaults back to first one
         {
-            if (LastPanelInt != i)
+            if (LastPanelInt != 0)
             {
-                image.sprite = mascotSprites[0];
+                foreach (var item in mascotSprites)
+                {
+                    int j = 0;
+                    if (item.enabled && j != 0)
+                    {
+                        item.enabled = false;
+                    }
+                    else
+                    if (j == 0)
+                    {
+                        item.enabled = true;
+                    }
+
+                    j++;
+                }
                 mascotText.text = "You have not found this event!  Keep looking!";
                 //mascotText.GetComponentInParent<Animator>().SetTrigger("Close");
                 LastPanelInt = i;

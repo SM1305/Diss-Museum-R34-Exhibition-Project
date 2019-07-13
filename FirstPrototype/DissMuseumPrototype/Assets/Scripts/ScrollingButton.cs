@@ -12,22 +12,23 @@ public class ScrollingButton : MonoBehaviour {
     public GameObject infoScreen;
 
     public Animator anim;
+    public Button button;
 
     public bool isPanelUnlocked = false;
 
     private void Start()
     {
         anim = GetComponent<Animator>();
+        button = this.GetComponent<Button>();
     }
 
     private void Update()
     {
         if(targetInt < TM.nextTarget)
         {
-            Debug.LogWarning("NOOOOO");
             isPanelUnlocked = true;
 
-            this.GetComponent<Button>().interactable = true;
+            button.interactable = true;
             LockedImage.enabled = false;
         }
     }
